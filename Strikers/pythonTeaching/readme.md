@@ -1,4 +1,4 @@
-A virtual Teacher which can teach you Python, JavaScript and some ethics in English and Hindi<br> 
+A virtual Teacher which can teach you Python<br> 
 -->It will start from the point where you last left the last class.<br>
 -->We have make some Graphics to make learning simpler.<br>
 -->It can connect to you Smart Phone or Smart Tv to show Presentation's<br>
@@ -13,8 +13,6 @@ A virtual Teacher which can teach you Python, JavaScript and some ethics in Engl
 --> Give me more tedious Coding challanges<br>
 --> What to do next <br>
 --> What are the prerequisite for this teach me that.<br>
-
-The other things we have added is Ethics it will read out Bhagwat Geeta shlok for you because in Hindu mythology it is said that all your answer are their in Bhagwat Geeta and it is a Holy Book so it improve your Mindset, and can Read out news for You.
 
 <b>Skill ID</b>
 amzn1.ask.skill.adb13039-35c9-43a8-9fc3-a82ca2fed76a
