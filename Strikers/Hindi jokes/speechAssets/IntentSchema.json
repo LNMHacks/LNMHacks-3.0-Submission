@@ -1,0 +1,35 @@
+{
+  "intents": [
+    {
+      "intent": "EmailAuthIntent",
+      "slots": [
+        {
+          "name": "CPin",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "SetPinIntent",
+      "slots": [
+        {
+          "name": "SPin",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "EmailCheckIntent"
+    },
+    {
+      "intent": "ForgotPinIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    }
+  ]
+}
+
