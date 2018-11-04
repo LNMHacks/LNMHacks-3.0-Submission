@@ -2,13 +2,14 @@
 ### Team Name: Sleepy Heads
 
 ### Input
-<img width ="100" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/boat.png"> 
-<img width ="100" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/gazebo.png"> <img width ="100" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/input2.png"> <img width ="100" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/tree.png">
+<img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/boat.png"> 
+<img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/gazebo.png"> <img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/input2.png"> <img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/tree.png">
 
 
 
 ### Output
-![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1boat.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1gazebo.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1input2.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1tree.png | width=100)
+<img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1boat.png"> 
+<img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1gazebo.png"> <img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1input2.png"> <img width ="500" src="https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1tree.png">
 
 
 ### Explaination:
