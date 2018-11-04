@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="true"
+                    android:src="@drawable/text_recognition"
+                    app:civ_shadow_radius="2"
+                    app:civ_shadow_color="#8BC34A"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:id="@+id/name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extract text"
+                    android:layout_toEndOf="@id/img1"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:layout_below="@id/name1"
+                    android:text="The power of scanning text from anywhere(using the camera) and user can extract the text like website url ,email-Id and copy that text"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    app:civ_border_color="#EEEEEE"
+                    app:civ_border_width="1dp"
+                    app:civ_shadow="true"
+                    android:src="@drawable/barcode_scanning"
+                    app:civ_shadow_radius="2"
+                    app:civ_shadow_color="#8BC34A"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QR code scanner"
+                    android:layout_toEndOf="@id/img2"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/info2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img2"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:layout_below="@id/name2"
+                    android:text="This will allow the users to scan any QR code and extract the information from it"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
