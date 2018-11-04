@@ -1,0 +1,89 @@
+body h1{
+  
+    font-size: 55px;
+
+ font-weight:700;
+  color: #ffff;
+
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 40vh;
+}
+
+
+
+#landing-header h1 {
+  color: #fff;
+}
+
+.slideshow { 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 20s linear infinite; 
+}
+
+.slideshow li:nth-child(1) { 
+  background-image: url('../images/newwool.jpg') 
+}
+.slideshow li:nth-child(2) { 
+  background-image: url('../images/necessary.jpg');
+  animation-delay: 4s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url('../images/sanju.jpg');
+  animation-delay: 8s; 
+}
+.slideshow li:nth-child(4) { 
+  background-image: url(../images/mi.jpg);
+  animation-delay: 12s; 
+}
+.slideshow li:nth-child(5) { 
+  background-image: url(../images/angelica.jpg);
+  animation-delay: 16s; 
+}
+
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+  opacity: 1;
+}
