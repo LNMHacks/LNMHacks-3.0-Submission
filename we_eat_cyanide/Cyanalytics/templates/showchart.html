@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+<h1>Parameters for Chart</h1>
+<h5>Please select Pie Graph only. Other's Coming soon</h5>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>{{ form.chart_type_bar() }} {{ form.chart_type_bar.label }}</p>
+    <p>{{ form.chart_type_line() }} {{ form.chart_type_line.label }}</p>
+    <p>{{ form.chart_type_pie() }} {{ form.chart_type_pie.label }}</p>
+    
+    <p>Numerical Columns - {% for item in n_cols%} {{item}} , {%endfor%}
+    </p>
+
+    <p>String Columns - {% for item in s_cols%}{{item}} , {%endfor%}
+    </p>
+
+    <p>
+        {{ form.x.label }}<br>
+        {{ form.x(size=32) }}<br>
+        {% for error in form.x.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.y.label }}<br>
+        {{ form.y(size=32) }}<br>
+        {% for error in form.y.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+</div>
+{% endblock %}

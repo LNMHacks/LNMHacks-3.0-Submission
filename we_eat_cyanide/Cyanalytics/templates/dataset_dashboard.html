@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+
+    
+    <div class="text-center"> 
+    <form action="" method="post" novalidate>
+        {{ select.hidden_tag() }}
+        <p>{{ select.submit() }}</p>
+    </form>
+
+    <form action="" method="post" novalidate>
+        {{ chart.hidden_tag() }}
+        <p>{{ chart.submit() }}</p>
+    </form>
+
+            <h2>Column Meta Information </h2>
+    <div>
+        <ul>
+            {% for item in cols%}
+            <li>{{item.key}} - {{item.value}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h2>Missing Values: </h2>
+    <div>
+        <ul>
+            {% for item in missing %}
+            <li>{{item.key}}   -    {{item.count}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

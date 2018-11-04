@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+<h1>Enter a single query param at once.</h1>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    
+    <p>Numerical Columns - {% for item in n_cols%} {{item}} , {%endfor%}
+    </p>
+
+    <p>String Columns - {% for item in s_cols%}{{item}} , {%endfor%}
+    </p>
+
+
+
+    <p>
+        {{ form.column.label }}<br>
+        {{ form.column(size=32) }}<br>
+        {% for error in form.column.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.single_int.label }}<br>
+        {{ form.single_int(size=32) }}<br>
+        {% for error in form.single_int.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+
+
+    <p>
+        {{ form.range_int.label }}<br>
+        {{ form.range_int(size=32) }}<br>
+        {% for error in form.range_int.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+
+
+    <p>
+        {{ form.text_match.label }}<br>
+        {{ form.text_match(size=32) }}<br>
+        {% for error in form.text_match.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+
+    <p>{{ form.regex() }} {{ form.regex.label }}</p>
+    <p>{{ form.null() }} {{ form.null.label }}</p>
+    <p>{{ form.geo_point() }} {{ form.geo_point.label }}</p>
+
+    <p>
+        {{ form.lat.label }}<br>
+        {{ form.lat(size=32) }}<br>
+        {% for error in form.lat.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>
+
+    <p>
+        {{ form.lng.label }}<br>
+        {{ form.lng(size=32) }}<br>
+        {% for error in form.lng.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+    </p>    
+    
+
+    <p>{{ form.submit() }}</p>
+</form>
+
+<form action="" method="post" novalidate>
+    {{ form2.hidden_tag() }}
+    <p>{{ form2.submit() }}</p>
+</form>
+</div>
+{% endblock %}
