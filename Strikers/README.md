@@ -27,8 +27,10 @@ amzn1.ask.skill.adb13039-35c9-43a8-9fc3-a82ca2fed76a
 M2L1RARFIB5OWA
 
 
-<h1>How to execute the file</h1>
-</br>
-<b>Install android app</b>
-</br>
-<b>Go to Python skill <a href=""> </b>
+<h1>How our Program will work</h1>
+<b>Just install Our apk in your android phone</b>
+<b>Go to alexa app and say " Hey Alexa, Ask lnmhacks to teach me python<b> and it will start a python teaching skill in your android app in whatever preffered language you wan't Just like it can teach you python in Hindi and English
+<br>
+ Similarly you can run any other skill just ask alexa and it will do it just say "Hey Alexa, ask lnmhacks to do ......" <br>
+  
+  
