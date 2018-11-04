@@ -32,5 +32,8 @@ M2L1RARFIB5OWA
 <b>Go to alexa app and say " Hey Alexa, Ask lnmhacks to teach me python<b> and it will start a python teaching skill in your android app in whatever preffered language you wan't Just like it can teach you python in Hindi and English
 <br>
  Similarly you can run any other skill just ask alexa and it will do it just say "Hey Alexa, ask lnmhacks to do ......" <br>
+ 
+ 
+ <h2>You can not install all skills on aws lambda and amazon developer contact us we will give you demo and we have provided video link on Hackerearth </h2>
   
   
