@@ -11,18 +11,24 @@ Game Engine - Unity3D
 AR SDK - Vuforia 
 
 Description :-
-We are making break throughs in every industry but still our education system is traditional and wasters many important resoures.
-So why not cahange it we have come up with an idea which users Artifical Inteligince With Computer Vision to make use of marker augmented reality to blend reality with the virtual world to create a imersive studing experince.
-Using our app the students will be able to project virual objects and complex models on simple text and logos.
+We are making break through in every industry but still our education system is traditional and wasters many important resources.
+So why not change it we have come up with an idea which users Artificial Intelligence With Computer Vision to make use of marker augmented reality to blend reality with the virtual world to create a immersive studying experience.
+Using our app the students will be able to project virtual objects and complex models on simple text and logos.
+Our app identifyies the objets in reality and then renders usersfull objects on them ex:- If you hava a chart data and want to see what will it look like if ploted userthe image that we provided and see your data being ploted in real time.(provided in ppt last 2 slides)
+
+Also if you want to see a 3d model of a skeleton you can just point our app at the image that we provided that reads human.(provided in ppt last 2 slides)
+
+And if you want to see cheatsheats of github and docker you can point you app at there logos.(provided in ppt last 2 slides)
 
 Installation :-
 1> Download and Install APK from this repo in folder "Binary Bombers"(arguruji.apk).
 2> Open app.
 3> Open ppt in a different device and go to last to slides.
 4> Now point the app on the images one by one.
-**If results as shown in demo video don't show please call us we will do a 5 min demo
+**If results as shown in demo video don't show please call us we will do a live demo
+
 
 PPT link - https://docs.google.com/presentation/d/1jy4EqeYwHsDGhwnPh6-5Ei3fRPoOnlWcYZdfJW2QYDU/edit?usp=sharing
-Demo Video - 
+Demo Video - https://drive.google.com/file/d/15BPRqFCJaNP5QcHfwThI4pBSYSNZD8IU/view?usp=sharing
 
 
