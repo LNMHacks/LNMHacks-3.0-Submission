@@ -1,0 +1,15 @@
+							    Tech_Knights
+							-*-*-*-*-*-*-*-*-*-*								
+Our hack is about the Waste Managment (Trashsters) from homes and industry. Here we employ workers to collect waste 
+(biodegradable) from homes and other industrial places and process this to make manures,bioproducts etc which eventually is 
+provided to the farmers and others at a subsidised rate. We have created a working prototype of website 
+using IDE Eclipse. We have used Tomcat9.0 as our local host port 8090. 
+We have created a basic version of website (frontend) using HTML5,JAVASCRIPT,BOOTSTRAP and CSS. Use Index.html file to have a look on website prototype.
+
+Team Members
+-*-*-*-*-*-*-
+Yogesh Agarwal
+Sarthak Kanodia
+Akshat Agarwal
+
+
