@@ -59,4 +59,5 @@ FILES DESCRIPTION:
 *(Main File) 5) Download.py: This python script will first change the saved image in to byte streams and then will send it as a request body to Microsoft Custom Vision 
  (which only predict the diseases of Potato, Banana and wheat). The api will send top 2 predictions which will be return back to 'welcome.php' 
 
-6) Rest Files are the Diseases Library with "Disqus" feature.
+6)Weather.py: It uses yahoo weather api to predict the weather of users location.
+7) Rest Files are the Diseases Library with "Disqus" feature.
