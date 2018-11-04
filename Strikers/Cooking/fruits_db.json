@@ -1,0 +1,498 @@
+[
+    [
+        "acerola (west indian cherry) raw",
+        "32"
+    ],
+    [
+        "acerola juice raw",
+        "23"
+    ],
+    [
+        "apples raw with skin",
+        "52"
+    ],
+    [
+        "apples raw without skin",
+        "48"
+    ],
+    [
+        "apples raw without skin cooked boiled",
+        "53"
+    ],
+    [
+        "apples raw without skin cooked microwave",
+        "56"
+    ],
+    [
+        "apricots raw",
+        "48"
+    ],
+    [
+        "avocados raw all commercial varieties",
+        "160"
+    ],
+    [
+        "avocados raw california",
+        "167"
+    ],
+    [
+        "avocados raw florida",
+        "120"
+    ],
+    [
+        "bananas raw",
+        "89"
+    ],
+    [
+        "blackberries raw",
+        "43"
+    ],
+    [
+        "blueberries raw",
+        "57"
+    ],
+    [
+        "breadfruit raw",
+        "103"
+    ],
+    [
+        "carambola (starfruit) raw",
+        "31"
+    ],
+    [
+        "carissa (natal-plum) raw",
+        "62"
+    ],
+    [
+        "cherimoya raw",
+        "75"
+    ],
+    [
+        "cherries sour red raw",
+        "50"
+    ],
+    [
+        "cherries sweet raw",
+        "63"
+    ],
+    [
+        "crabapples raw",
+        "76"
+    ],
+    [
+        "cranberries raw",
+        "46"
+    ],
+    [
+        "currants european black raw",
+        "63"
+    ],
+    [
+        "currants red and white raw",
+        "56"
+    ],
+    [
+        "custard-apple (bullock's-heart) raw",
+        "101"
+    ],
+    [
+        "elderberries raw",
+        "73"
+    ],
+    [
+        "figs raw",
+        "74"
+    ],
+    [
+        "gooseberries raw",
+        "44"
+    ],
+    [
+        "grapefruit raw pink and red and white all areas",
+        "32"
+    ],
+    [
+        "grapefruit raw pink and red all areas",
+        "42"
+    ],
+    [
+        "grapefruit raw pink and red california and arizona",
+        "37"
+    ],
+    [
+        "grapefruit raw pink and red florida",
+        "30"
+    ],
+    [
+        "grapefruit raw white all areas",
+        "33"
+    ],
+    [
+        "grapefruit raw white california",
+        "37"
+    ],
+    [
+        "grapefruit raw white florida",
+        "32"
+    ],
+    [
+        "grapefruit juice white raw",
+        "39"
+    ],
+    [
+        "grapes muscadine raw",
+        "57"
+    ],
+    [
+        "grapes american type (slip skin) raw",
+        "67"
+    ],
+    [
+        "grapes red or green (european type such as thompson seedless) raw",
+        "69"
+    ],
+    [
+        "groundcherries (cape-gooseberries or poha) raw",
+        "53"
+    ],
+    [
+        "guavas common raw",
+        "68"
+    ],
+    [
+        "guavas strawberry raw",
+        "69"
+    ],
+    [
+        "jackfruit raw",
+        "95"
+    ],
+    [
+        "java-plum (jambolan) raw",
+        "60"
+    ],
+    [
+        "jujube raw",
+        "79"
+    ],
+    [
+        "kiwifruit green raw",
+        "61"
+    ],
+    [
+        "kumquats raw",
+        "71"
+    ],
+    [
+        "lemons raw without peel",
+        "29"
+    ],
+    [
+        "lemon juice raw",
+        "22"
+    ],
+    [
+        "lemon peel raw",
+        "47"
+    ],
+    [
+        "limes raw",
+        "30"
+    ],
+    [
+        "lime juice raw",
+        "25"
+    ],
+    [
+        "litchis raw",
+        "66"
+    ],
+    [
+        "longans raw",
+        "60"
+    ],
+    [
+        "loquats raw",
+        "47"
+    ],
+    [
+        "mammy-apple (mamey) raw",
+        "51"
+    ],
+    [
+        "mangos raw",
+        "60"
+    ],
+    [
+        "melons cantaloupe raw",
+        "34"
+    ],
+    [
+        "melons casaba raw",
+        "28"
+    ],
+    [
+        "melons honeydew raw",
+        "36"
+    ],
+    [
+        "mulberries raw",
+        "43"
+    ],
+    [
+        "nectarines raw",
+        "44"
+    ],
+    [
+        "oheloberries raw",
+        "28"
+    ],
+    [
+        "oranges raw all commercial varieties",
+        "47"
+    ],
+    [
+        "oranges raw california valencias",
+        "49"
+    ],
+    [
+        "oranges raw navels",
+        "49"
+    ],
+    [
+        "oranges raw florida",
+        "46"
+    ],
+    [
+        "oranges raw with peel",
+        "63"
+    ],
+    [
+        "orange juice raw",
+        "45"
+    ],
+    [
+        "orange peel raw",
+        "97"
+    ],
+    [
+        "tangerines (mandarin oranges) raw",
+        "53"
+    ],
+    [
+        "tangerine juice raw",
+        "43"
+    ],
+    [
+        "papayas raw",
+        "43"
+    ],
+    [
+        "passion-fruit (granadilla) purple raw",
+        "97"
+    ],
+    [
+        "passion-fruit juice purple raw",
+        "51"
+    ],
+    [
+        "passion-fruit juice yellow raw",
+        "60"
+    ],
+    [
+        "peaches yellow raw",
+        "39"
+    ],
+    [
+        "pears raw",
+        "57"
+    ],
+    [
+        "persimmons japanese raw",
+        "70"
+    ],
+    [
+        "persimmons native raw",
+        "127"
+    ],
+    [
+        "pineapple raw all varieties",
+        "50"
+    ],
+    [
+        "pitanga (surinam-cherry) raw",
+        "33"
+    ],
+    [
+        "plantains raw",
+        "122"
+    ],
+    [
+        "plums raw",
+        "46"
+    ],
+    [
+        "pomegranates raw",
+        "83"
+    ],
+    [
+        "prickly pears raw",
+        "41"
+    ],
+    [
+        "pummelo raw",
+        "38"
+    ],
+    [
+        "quinces raw",
+        "57"
+    ],
+    [
+        "raspberries raw",
+        "52"
+    ],
+    [
+        "rhubarb raw",
+        "21"
+    ],
+    [
+        "roselle raw",
+        "49"
+    ],
+    [
+        "rose-apples raw",
+        "25"
+    ],
+    [
+        "sapodilla raw",
+        "83"
+    ],
+    [
+        "sapote mamey raw",
+        "124"
+    ],
+    [
+        "soursop raw",
+        "66"
+    ],
+    [
+        "strawberries raw",
+        "32"
+    ],
+    [
+        "strawberries canned heavy syrup pack solids and liquids",
+        "92"
+    ],
+    [
+        "strawberries frozen unsweetened",
+        "35"
+    ],
+    [
+        "strawberries frozen sweetened whole",
+        "78"
+    ],
+    [
+        "strawberries frozen sweetened sliced",
+        "96"
+    ],
+    [
+        "sugar-apples (sweetsop) raw",
+        "94"
+    ],
+    [
+        "tamarinds raw",
+        "239"
+    ],
+    [
+        "watermelon raw",
+        "30"
+    ],
+    [
+        "feijoa raw",
+        "61"
+    ],
+    [
+        "pears asian raw",
+        "42"
+    ],
+    [
+        "grapefruit juice pink raw",
+        "39"
+    ],
+    [
+        "pears raw bartlett",
+        "63"
+    ],
+    [
+        "pears raw red anjou",
+        "62"
+    ],
+    [
+        "pears raw bosc",
+        "67"
+    ],
+    [
+        "pears raw green anjou",
+        "66"
+    ],
+    [
+        "durian raw or frozen",
+        "147"
+    ],
+    [
+        "abiyuch raw",
+        "69"
+    ],
+    [
+        "rowal raw",
+        "111"
+    ],
+    [
+        "pineapple raw traditional varieties",
+        "45"
+    ],
+    [
+        "pineapple raw extra sweet variety",
+        "51"
+    ],
+    [
+        "clementines raw",
+        "47"
+    ],
+    [
+        "apples raw red delicious with skin",
+        "59"
+    ],
+    [
+        "apples raw golden delicious with skin",
+        "57"
+    ],
+    [
+        "apples raw granny smith with skin",
+        "58"
+    ],
+    [
+        "apples raw gala with skin",
+        "57"
+    ],
+    [
+        "apples raw fuji with skin",
+        "63"
+    ],
+    [
+        "fruit juice smoothie bolthouse farms strawberry banana",
+        "52"
+    ],
+    [
+        "kiwifruit zespri sungold raw",
+        "63"
+    ],
+    [
+        "fruit juice smoothie odwalla strawberry banana",
+        "48"
+    ],
+    [
+        "fruit juice smoothie naked juice strawberry banana",
+        "50"
+    ]
+]
