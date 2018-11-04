@@ -1,0 +1,19 @@
+{
+  "name": "function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayush Chauhan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
+    "mqtt": "^2.16.0",
+    "mqttjs": "0.0.0",
+    "request": "^2.85.0",
+    "soap": "^0.24.0"
+  }
+}

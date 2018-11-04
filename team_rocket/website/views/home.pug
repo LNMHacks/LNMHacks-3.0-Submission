@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Swachh dust bin
+  p.lead एक क़दम स्वच्छता की ओर ।
+  hr
+  .row
+    .col-md-8
+      h2 Image feed
+      p Here is some of our recent images.
+      p
+        a.btn.btn-raised(href='#', role='button') View details »
+      p
+        img.className#IdName(src="https://garbagee.blob.core.windows.net/blobee/1.jpg" alt="Frames")
+    .col-md-4
+      h2 Twitter feed
+      p making some people famous
+      p
+        <a class="twitter-timeline" href="https://twitter.com/heyayushh?ref_src=twsrc%5Etfw">Tweets by heyayushh</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        a.btn.btn-raised(href='#', role='button') View details »
