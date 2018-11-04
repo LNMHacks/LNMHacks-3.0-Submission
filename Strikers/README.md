@@ -34,6 +34,6 @@ M2L1RARFIB5OWA
  Similarly you can run any other skill just ask alexa and it will do it just say "Hey Alexa, ask lnmhacks to do ......" <br>
  
  
- <h2>You can not install all skills on aws lambda and amazon developer contact us we will give you demo and we have provided video link on Hackerearth </h2>
+ <h2>PS - You can not install all skills on aws lambda and amazon developer contact us we will give you demo and we have provided video link on Hackerearth </h2>
   
   
