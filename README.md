@@ -1,6 +1,15 @@
 ## Project Topic: Using Neural Networks to recreate lost parts of images
 ### Team Name: Sleepy Heads
 
+### Input
+![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/boat.png) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/gazebo.png) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/input2.png) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/tree.png)
+
+
+
+### Output
+![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1boat.png) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1gazebo.png) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1input2.png) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/1tree.png)
+
+
 ### Explaination:
 
 The traditional implementation uses the texture of surrounding areas and fill the area but it does not usually produce good results, so we used a combination of **Object Detection and surrounding textures** to get the desired output.
