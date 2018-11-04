@@ -14,24 +14,32 @@ We learn to inpaint missing regions with a deep convolutional network. Our netwo
 ### Installation and Running
 
 ####INSTALLING DEPENDENCIES
->git clone https://github.com/torch/distro.git ~/torch --recursive
->cd ~/torch; bash install-deps;
->./install.sh
->luarocks install image
+```
+git clone https://github.com/torch/distro.git ~/torch --recursive
+cd ~/torch; bash install-deps;
+./install.sh
+luarocks install image
+```
 Once installed we can run torch using th command
 
 
 ####INSTALLING FILES 
->git clone https://github.com/utkarsh-maheshwari/image-completion.git
->cd image-completion
->bash download_model.sh
+```
+git clone https://github.com/utkarsh-maheshwari/image-completion.git
+cd image-completion
+bash download_model.sh
+```
 
 ####USAGE 
->cd image-completion
->mkdir input
->mkdir output
+```
+cd image-completion
+mkdir input
+mkdir output
+```
 Copy the redacted images into the input folder
->python final.py
+```
+python final.py
+```
 
 This code provides an extension to the the research paper:
 
