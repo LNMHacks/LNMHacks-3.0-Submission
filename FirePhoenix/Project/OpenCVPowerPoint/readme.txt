@@ -1,0 +1,1 @@
+TO run the project go to the the Debug folder then rin the detect.exe file
