@@ -2,9 +2,16 @@
 
 An automated parking counter based on cctv footages for parking spots near you.
 
+![detectedimage](/outputs/1.jpeg)
+
+![appscreens](/outputs/4.jpeg)
+![appscreens](/outputs/2.jpeg)
+![appscreens](/outputs/5.jpeg)
+![appscreens](/outputs/3.jpeg)
+
 ## Getting Started
 
-The vehicles_detection.py is an organisation script and is supposed to be executed by the parking authorities/companies using their cctv footages as input. The algorithm counts the number of cars and calculates slots left in a given parking lot. This number is then passed on to the user through a mobile application.
+The Vehicles_detection.py is an organisation script and is supposed to be executed by the parking authorities/companies using their cctv footages as input. The algorithm counts the number of cars and calculates slots left in a given parking lot. This number is then passed on to the user through a mobile application.
 
 ### Prerequisites
 
@@ -19,7 +26,7 @@ python install.py
 Clone the repository.
 Add cctv footages to be analysed into the parent directory where vehicle_detection.py exist ([some_examples](https://drive.google.com/open?id=1kayO8KoOVQkK1mucxAItKCpUVrvCgWmw)), open a terminal and execute command,
 ```
-python vehicles_detection.py
+python Vehicles_detection.py
 ```
 
 ## Deployment
