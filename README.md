@@ -36,7 +36,7 @@ cd image-completion
 mkdir input
 mkdir output
 ```
-### **Note: The image should be redacted (erased) with HEX values: #010203 and NOT any other color and should use Paint 3d in Windows and gnome-paint drawing editor in Linux**
+### **Note: The image should be redacted (erased) with HEx values: #010203 and NOT any other color and should use Paint 3d in Windows and gnome-paint drawing editor in Linux**
 Copy the redacted images into the input folder
 
 ```
