@@ -2,7 +2,7 @@
 ### Team Name: Sleepy Heads
 
 ### Input
-![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/boat.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/gazebo.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/input2.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/tree.png | width=100)
+![](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/boat.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/gazebo.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/input2.png | width=100) ![alt text](https://github.com/art-hack/LNMHacks-3.0-Submission/blob/master/input/tree.png | width=100)
 
 
 
