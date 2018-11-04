@@ -1,5 +1,13 @@
 # DRO-LAM
 ## Drone-aided Laser Acquisition Marker with offensive and defensive capabilities
+caution : please contact us when trying to reproduce the said results
+Phone Number : 9210775170
+Email ID : piyushaggarwal002@gmail.com
+            ritukapatwal21@gmail.com
+
+## [PRESENTATION](https://www.slides.com/ritukapatwal/dro-lam)
+
+## [VIDEO LINK](https://youtu.be/ObfuIkseThc)
 
 #### Overview
 This project aims to aid the military with Autonomous sentinels to be deployed in boundary based war-zones and for security of friendly zones. The project was modeled on the concept of **S.T.A.R**
