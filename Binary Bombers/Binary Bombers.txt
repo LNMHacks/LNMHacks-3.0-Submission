@@ -21,13 +21,15 @@ Also if you want to see a 3d model of a skeleton you can just point our app at t
 And if you want to see cheatsheats of github and docker you can point you app at there logos.(provided in ppt last 2 slides)
 
 Installation :-
-1> Download and Install APK from this repo in folder "Binary Bombers"(arguruji.apk).
+**Please Call Us for Demo
+1> Download and Install APK from google drive link provided below.
 2> Open app.
 3> Open ppt in a different device and go to last to slides.
 4> Now point the app on the images one by one.
 **If results as shown in demo video don't show please call us we will do a live demo
 
 
+App Link - https://drive.google.com/file/d/1tnOUSb8gk2JlQfd-ral8-2d1xb4UDm0h/view?usp=sharing
 PPT link - https://docs.google.com/presentation/d/1jy4EqeYwHsDGhwnPh6-5Ei3fRPoOnlWcYZdfJW2QYDU/edit?usp=sharing
 Demo Video - https://drive.google.com/file/d/15BPRqFCJaNP5QcHfwThI4pBSYSNZD8IU/view?usp=sharing
 
