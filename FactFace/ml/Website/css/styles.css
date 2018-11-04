@@ -1,0 +1,219 @@
+body{
+	color:#ee3d3f;
+	background-color: #ee3d3f;
+	font-family:'Oxygen',sans-serif;
+}
+
+#header-nav {
+	background-color: #ffffff;
+	border-radius: 0;
+	border:0;
+}
+
+#logo {
+	background: url("../img/bull(2).jpg") no-repeat;
+	width: 150px;
+	height: 150px;
+	margin-right: 30px;
+}
+
+.navbar-brand{
+	padding-top:25px;
+}
+
+.navbar-brand h1{
+	font-family: 'Lato', sans-serif;
+	color:#ee3d3f;
+	font-size:2.0em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow:2px 2px 2px #990000;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75; 
+
+}	
+.navbar-brand a:hover,.nabvar-brand a:focus {
+	text-decoration:none;
+} 
+.navbar-brand p{
+	color:#000000;
+	text-transform: uppercase;
+	margin-top:15px;
+}
+.navbar-brand p span{
+	vertical-align: middle;
+}
+#nav-list {
+	margin-top: 10px;
+}
+#nav-list a{
+	color:#951c49;
+	text-align: center;
+}
+#nav-list a:hover {
+	background:#e7e7e7;
+}
+#nav-list a span{
+	font-size:1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border:1px solid #61122f;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+}
+/*--------------------------HEADER ENDS-------------------*/
+
+/*--------------------MAIN CONTENT------------------*/
+#about h2{
+	color: #3f0c1f;
+}
+#docu h2{
+	color: #3f0c1f;
+}
+
+#main-content {
+	color: white;
+	padding:30px;
+	font-size: 1.5em;
+}
+.loader {
+	margin-top: 30px;
+	text-align: center;
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-bottom: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#loading {
+	display: none;
+}
+#pro {
+	color: #ffffff;
+	display: none;	
+}
+
+
+
+/*--------------------------------SIZING-------------------*/
+@media(min-width: 1200px) {
+	#main-content {
+		height:460px;
+		box-shadow: 0 0 50px #3f0c1f;
+		border: 2px solid #3f0c1f;
+	} 
+	.input-group {
+		margin-top: 40px;
+		padding:40px; 
+		text-align: center;
+	}
+	
+	.loader {
+		margin: auto;
+	}
+	#button {
+		padding-bottom: 30px;
+		margin-top:10px;
+		color: black;
+	}
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+	#main-content{ 
+		height:430px;
+		box-shadow: 0 0 50px #3f0c1f;
+		border: 2px solid #3f0c1f;
+	}
+	.input-group {
+		margin-top: 30px;
+		padding:30px; 
+		text-align: center;
+	}
+	
+	.loader {
+		margin: auto;
+	}
+	#button {
+		padding-bottom: 20px;
+		margin-top:10px;
+		color: black;
+	}
+}
+@media(min-width: 768px)and (max-width: 991px) {
+	#main-content{
+		
+		height:350px;
+		box-shadow: 0 0 50px #3f0c1f;
+		border: 2px solid #3f0c1f;
+		}
+	.input-group {
+		margin-top: 20px;
+		padding:15px; 
+		text-align: center;
+	}
+	#button {
+		margin-top:0px;
+		color: black;
+		padding-bottom: 10px;
+	}
+	.loader {
+		margin: auto;
+	}
+}
+@media(max-width: 767px) {
+	.loader {
+		margin: auto;
+	}
+	.navbar-brand{
+		padding-top: 10px;
+		height:80px;
+	}
+	.navbar-brand h1 {
+		padding-top: 50px;
+		font-size: 6vw;
+	}
+	.navbar-brand p {
+		font-size: .7em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img{
+		height:20px;
+	}
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 7px;
+	}
+	#button {
+		color: black;
+	}
+
+	
+@media (max-width: 479px) {
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 1.5em;
+	}
+	#button {
+		color:black;
+	}
+	
+	.col-xxs-12 {
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+		float: left;
+		width: 100%;
+	}
+}
