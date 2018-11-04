@@ -1,0 +1,62 @@
+*Note: This project will not run on localhost because its using SQLServer to run it's main code and is designed to run only on Azure. Although after some changes it may run on localhost, so pls contact me.
+	
+
+TEAM NAME: Sahayata Corps
+TEAM MEMBER: Adarsh agarwal
+PROJECT NAME:  Kisahan Seva
+
+PROJECT URL: https://kisahanseva.azurewebsites.net/
+
+REQUIREMENTS: Python 3.6
+	      PHP 5
+	      Open Cv
+	      Mahotas
+              Pandas
+	      Numpy
+
+SOLUTION DESCRIPTION: Kisahan-Seva is an website that aims to help farmers to identify their crop’s diseases via Image Recognition applying Machine Learning and also provide appropriate prevention techniques and cures for the disease in form of biological fertilizers and tradition techniques as well as proper ways to use chemical fertilizers too.
+
+Kisahan-Seva provides a simple guided procedure for people unknown to the technology and guides them through the steps of using the website in most efficient way.
+Farmer can upload the image of the crop either directly using camera or browsing through gallery to the Kisahan Seva website which provides the information of the disease by analysing the crop image in its disease library and providing the best possible cures for the disease.
+
+Farmers in situation when needs some extra help can ask their questions on global forum of various other farmers and experts which will further be translated to all other languages via website easily accessible to everyone.
+
+STEPS TO RUN ON LOCALHOST:
+    1)Place the whole folder in your htdocs folder of Xampp.
+    2)Install mention packages.
+    3)Copy the path of python interperator where you have installed all the packages.
+    *4)After that a few changes has to be made so that it can run on localhost, so please contact me.
+
+STEPS TO SEE ONLINE:
+   1) Open url https://kisahanseva.azurewebsites.net/
+   2) Go to the upload section. Click on upload button and upload any image from provided dataset AppleCv and TomatoCv.
+   3) Select the crop type and then click on submit.
+   4) It will take some time and after that it will show result.
+   5) You can also Disease libraries by clicking on library. Each disease page has a global forum "Disqus", so that user       can discuss with other users
+*Note: In case of some error, contact me.
+
+PROJECT DESCRIPTION:
+Two different Machine Learning Models are trained with thousands of images to classify 10 Tomato Leaf Diseases and 4 Apple Leaf Diseases.
+Model 1: RandomForestClassifier
+Model 2: Logistic Regression
+Both trained Models are deployed on Azure ML Studio so that they can be used as services.
+For diseases related to Wheat, Potato & Banana, Microsoft Custom Vision is used. Microsoft Custom Vision is traine with hundreds of images to classify the diseases. 
+
+FILES DESCRIPTION:
+1)camera.html: Its the camera web app that user can use to click the photo of crop. User have to select the crop type. After that it send/post image in base64 format to 'welcome.php' for further analysis. 
+
+2)upload1.html: It allows user to upload image of crop from their galary directly. User have to select the crop type. After that it send/post image in base64 format to 'welcome.php' for further analysis.
+
+3)welcome.php: It recieves the data either from camera.html or upload1.html (depends on user's choice). After that, it save that image in to our database and make a call to python file via 'exec()'. The call is made as follow:
+		a) For Apple and Tomato crop type:
+			Saved Image name and its crop type is passed as arguements to 'TestApple.py' Python file.
+		b) For Wheat, Potato & Banana:
+			It first retrive url for API model trained on given crop type. Then saved Image name and its API url is passed as arguements to 			'download.py' Python file.
+	Then this python scripts will return the top 2 result back to this php file which will now display it to the user with the link to the detail information page 	of that disease (For now only Apple and Tomato Disease library have been created).
+
+*(Main File) 4)TestApple.py: This python script will first extract the features of the uploaded image, convert it in to a matrix. Then it will normalize the feature vector using the min and max values from the cross_validation dataset. After features normalization it, will first send data to MY trained models (deployed on Azure ML Studio). First it will send request to RandomForestClassifier which will return the best 2 prediction. Then it will send request to LogisticRegression classifier which too will return the best 2 prediction. After that, the mean of the result back to 'welcome.php'.
+
+*(Main File) 5) Download.py: This python script will first change the saved image in to byte streams and then will send it as a request body to Microsoft Custom Vision 
+ (which only predict the diseases of Potato, Banana and wheat). The api will send top 2 predictions which will be return back to 'welcome.php' 
+
+6) Rest Files are the Diseases Library with "Disqus" feature.

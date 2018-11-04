@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Kisahan Seva</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Farming Company Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body style="background-color:#E4F1FE;">
+	<!-- header -->
+	<script type="text/javascript">alert("For best result, it is recommended that you keep the leaf on a plain cardboard.");</script>
+	<div class="site-header" style="background-color:#00081c; padding:10px 0px;">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="images/praLogo.png" alt="logo" class="logo" width="80" height="65">
+						<div class="logo-type">
+							<h1 class="site-title">Kisahan Seva</h1>
+							<small class="site-description">Your happiness helps us grow!</small>
+						</div>
+					</a>
+
+					<!-- Default snippet for navigation -->
+					<div class="main-navigation" style="margin-top:20px;">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="camera.html">Camera</a></li>
+							<li class="menu-item"><a href="upload1.html">Upload</a></li>
+							<li class="menu-item"><a href="library.html">Library</a></li>
+							<li class="menu-item"><a href="hi/index.html">Language</a></li>
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+
+				</div>
+			</div>
+	<!-- //header -->
+	
+	<br><br>
+    <div class="booth container-fluid">
+		<select id="videoSource" style = "display:none;"></select>
+		<div style="padding: 0px 40px;">
+			<video id="video" autoplay width="50%" height="35%"></video>
+	    </div>
+		<br>
+		<br>
+		<input style="margin-left:10px;margin-left: 10px;font-size: 25px;padding: 0% 23%;border-radius: 10px;" type="submit" id="capture" class="btn-primary" value="Click">
+		<br>
+		<canvas id="canvas" width=256 height=256 style="display: none;"></canvas>
+	</div>
+	<div class="booth container-fluid" style="padding: 0% 30%;">
+		<br>
+		<img id = "photo" src="test2.jpg" width="100%" height="50%;">
+		
+		<form action="welcome.php" method="post">
+			<input type="text" name="name" value="inpp" id="imgg" style="display: none;" class="hidd">
+			
+			<br>
+			<br>
+			<label for="Choice" style="color: #888;padding-left:135px;">Select Crop Type: </label><select id="Choice" class="selectpicker" name="crop" style="margin-left: 17px; border-radius: 10px; color: black;">
+			
+			<option value="Apple">Apple</option>
+			<option value="Tomato">Tomato</option>
+			<option value="Potato">Potato</option>
+			<option value="Banana">Banana</option>
+			<option value="Wheat">Wheat</option>
+			</select>
+
+	         <input style="margin-left:10px;" type="submit" id="send" class="booth-capture-button">
+
+		</form>
+		<br>
+		<br>
+	</div>
+	
+	<script src="js/photo.js"></script>
+	
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="agileinfo_footer_grids">
+				<div class="col-md-4 agileinfo_footer_grid">
+					<div class="agile-logo">
+						<h4><a href="index.html">Kisahan<span>Seva</span></a></h4>
+					</div>
+					<p>We provide technology to detect crop diseases and measures to prevent them from spreading.</p>
+					
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>Contact Info</h3>
+					<ul class="agileinfo_footer_grid_list">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>SAHAYATA Corps<span>Jaipur.</span></li>
+						
+						
+					</ul>
+				</div>
+				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+<!-- //here ends scrolling icon -->
+</body>	
+</html>
