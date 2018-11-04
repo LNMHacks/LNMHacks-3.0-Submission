@@ -1,0 +1,28 @@
+{
+    "name": "lnmhacks",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "engines": {
+        "node": "11.0.0"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "ejs": "^2.6.1",
+        "express": "^4.16.4",
+        "solc": "^0.4.25",
+        "truffle-hdwallet-provider": "0.0.6",
+        "web3": "^1.0.0-beta.36"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "ganache-cli": "^6.1.8",
+        "nodemon": "^1.18.5"
+    }
+}
