@@ -1,0 +1,638 @@
+
+
+  All intents
+    Test LaunchIntent
+2017-02-13T07:50:35.574Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.576Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {},
+    "type": "LaunchRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.576Z - debug: onLaunch requestId=request5678, sessionId=session1234
+2017-02-13T07:50:35.577Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>Hi, I am Food Nutrition Lookup skill. You can ask me about calorie information of food items. Which food would you like to check?</speak>"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak>For example, you can say how many calories are in butter salted.</speak>"
+      }
+    }
+  },
+  "sessionAttributes": {}
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+      ✓ valid outputSpeech
+    Test GetNutritionInfo butter salted
+2017-02-13T07:50:35.583Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.584Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "GetNutritionInfo",
+      "slots": {
+        "FoodItem": {
+          "name": "FoodItem",
+          "value": "butter salted"
+        }
+      }
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.612Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>100 grams of butter, salted contains 717 calories. </speak>"
+    },
+    "shouldEndSession": true
+  }
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+    Test GetNutritionInfo orange
+2017-02-13T07:50:35.613Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.614Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "GetNutritionInfo",
+      "slots": {
+        "FoodItem": {
+          "name": "FoodItem",
+          "value": "orange"
+        }
+      }
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.621Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>100 grams of orange juice, chilled, includes from concentrate, with added calcium contains 47 calories. 100 grams of oranges, raw, all commercial varieties contains 47 calories. 100 grams of oranges, raw, navels contains 49 calories. There are more foods matched your search. You can say more information for more information. Or say stop to stop the skill. </speak>"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak>You can say more information or stop.</speak>"
+      }
+    }
+  },
+  "sessionAttributes": {
+    "resultLength": 18,
+    "results": [
+      [
+        "oranges, raw, florida",
+        "46",
+        "0.70",
+        "0.21",
+        "0900",
+        "09203"
+      ],
+      [
+        "oranges, raw, with peel",
+        "63",
+        "1.30",
+        "0.30",
+        "0900",
+        "09205"
+      ],
+      [
+        "orange juice, raw",
+        "45",
+        "0.70",
+        "0.20",
+        "0900",
+        "09206"
+      ],
+      [
+        "orange juice, canned, unsweetened",
+        "47",
+        "0.68",
+        "0.15",
+        "0900",
+        "09207"
+      ],
+      [
+        "orange juice, chilled, includes from concentrate",
+        "49",
+        "0.68",
+        "0.12",
+        "0900",
+        "09209"
+      ],
+      [
+        "orange juice, chilled, includes from concentrate, with added calcium and vitamin d",
+        "47",
+        "0.68",
+        "0.12",
+        "0900",
+        "09210"
+      ],
+      [
+        "oranges, raw, california, valencias",
+        "49",
+        "1.04",
+        "0.30",
+        "0900",
+        "09201"
+      ]
+    ]
+  }
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+      ✓ valid reprompt
+    Test GetNextEventIntent orange
+2017-02-13T07:50:35.623Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.623Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {
+      "resultLength": 18,
+      "results": [
+        [
+          "oranges, raw, florida",
+          "46",
+          "0.70",
+          "0.21",
+          "0900",
+          "09203"
+        ],
+        [
+          "oranges, raw, with peel",
+          "63",
+          "1.30",
+          "0.30",
+          "0900",
+          "09205"
+        ],
+        [
+          "orange juice, raw",
+          "45",
+          "0.70",
+          "0.20",
+          "0900",
+          "09206"
+        ],
+        [
+          "orange juice, canned, unsweetened",
+          "47",
+          "0.68",
+          "0.15",
+          "0900",
+          "09207"
+        ],
+        [
+          "orange juice, chilled, includes from concentrate",
+          "49",
+          "0.68",
+          "0.12",
+          "0900",
+          "09209"
+        ],
+        [
+          "orange juice, chilled, includes from concentrate, with added calcium and vitamin d",
+          "47",
+          "0.68",
+          "0.12",
+          "0900",
+          "09210"
+        ],
+        [
+          "oranges, raw, california, valencias",
+          "49",
+          "1.04",
+          "0.30",
+          "0900",
+          "09201"
+        ]
+      ]
+    },
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "GetNextEventIntent",
+      "slots": {}
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.624Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>Your search resulted in 18 food items. Here are the few food items from search. Please add more keywords from this list for better results.oranges, raw, florida. oranges, raw, with peel. orange juice, raw. orange juice, canned, unsweetened. orange juice, chilled, includes from concentrate. orange juice, chilled, includes from concentrate, with added calcium and vitamin d. oranges, raw, california, valencias. </speak>"
+    },
+    "shouldEndSession": true
+  }
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+    Test AMAZON.StopIntent orange
+2017-02-13T07:50:35.625Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.625Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "AMAZON.StopIntent",
+      "slots": {}
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.625Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>Good Bye. </speak>"
+    },
+    "shouldEndSession": true
+  }
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+    Test GetNutritionInfo apples raw
+2017-02-13T07:50:35.626Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.626Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "GetNutritionInfo",
+      "slots": {
+        "FoodItem": {
+          "name": "FoodItem",
+          "value": "apples raw"
+        }
+      }
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.634Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>100 grams of apples, raw, with skin contains 52 calories. 100 grams of apples, raw, fuji, with skin contains 63 calories. 100 grams of apples, raw, without skin, cooked, boiled contains 53 calories. There are more foods matched your search. You can say more information for more information. Or say stop to stop the skill. </speak>"
+    },
+    "shouldEndSession": false,
+    "reprompt": {
+      "outputSpeech": {
+        "type": "SSML",
+        "ssml": "<speak>You can say more information or stop.</speak>"
+      }
+    }
+  },
+  "sessionAttributes": {
+    "resultLength": 11,
+    "results": [
+      [
+        "apples, raw, without skin, cooked, microwave",
+        "56",
+        "0.28",
+        "0.42",
+        "0900",
+        "09006"
+      ],
+      [
+        "apples, raw, gala, with skin",
+        "57",
+        "0.25",
+        "0.12",
+        "0900",
+        "09503"
+      ],
+      [
+        "apples, raw, without skin",
+        "48",
+        "0.27",
+        "0.13",
+        "0900",
+        "09004"
+      ],
+      [
+        "apples, raw, red delicious, with skin",
+        "59",
+        "0.27",
+        "0.20",
+        "0900",
+        "09500"
+      ],
+      [
+        "apples, raw, golden delicious, with skin",
+        "57",
+        "0.28",
+        "0.15",
+        "0900",
+        "09501"
+      ],
+      [
+        "apples, raw, granny smith, with skin",
+        "58",
+        "0.44",
+        "0.19",
+        "0900",
+        "09502"
+      ],
+      [
+        "crabapples, raw",
+        "76",
+        "0.40",
+        "0.30",
+        "0900",
+        "09077"
+      ]
+    ]
+  }
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+      ✓ valid reprompt
+    Test GetNextEventIntent apples raw
+2017-02-13T07:50:35.636Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.636Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {
+      "resultLength": 11,
+      "results": [
+        [
+          "apples, raw, without skin, cooked, microwave",
+          "56",
+          "0.28",
+          "0.42",
+          "0900",
+          "09006"
+        ],
+        [
+          "apples, raw, gala, with skin",
+          "57",
+          "0.25",
+          "0.12",
+          "0900",
+          "09503"
+        ],
+        [
+          "apples, raw, without skin",
+          "48",
+          "0.27",
+          "0.13",
+          "0900",
+          "09004"
+        ],
+        [
+          "apples, raw, red delicious, with skin",
+          "59",
+          "0.27",
+          "0.20",
+          "0900",
+          "09500"
+        ],
+        [
+          "apples, raw, golden delicious, with skin",
+          "57",
+          "0.28",
+          "0.15",
+          "0900",
+          "09501"
+        ],
+        [
+          "apples, raw, granny smith, with skin",
+          "58",
+          "0.44",
+          "0.19",
+          "0900",
+          "09502"
+        ],
+        [
+          "crabapples, raw",
+          "76",
+          "0.40",
+          "0.30",
+          "0900",
+          "09077"
+        ]
+      ]
+    },
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "GetNextEventIntent",
+      "slots": {}
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.636Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>Your search resulted in 11 food items. Here are the few food items from search. Please add more keywords from this list for better results.apples, raw, without skin, cooked, microwave. apples, raw, gala, with skin. apples, raw, without skin. apples, raw, red delicious, with skin. apples, raw, golden delicious, with skin. apples, raw, granny smith, with skin. crabapples, raw. </speak>"
+    },
+    "shouldEndSession": true
+  }
+}
+      ✓ valid response
+      1) valid outputSpeech
+    Test AMAZON.StopIntent apples raw
+2017-02-13T07:50:35.640Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.641Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "AMAZON.StopIntent",
+      "slots": {}
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.641Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>Good Bye. </speak>"
+    },
+    "shouldEndSession": true
+  }
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+    Test GetNutritionInfo toy
+2017-02-13T07:50:35.643Z - info: event.session.application.applicationId=amzn1.echo-sdk-ams.app.1234
+2017-02-13T07:50:35.643Z - debug: Incoming request:
+ {
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "name": "GetNutritionInfo",
+      "slots": {
+        "FoodItem": {
+          "name": "FoodItem",
+          "value": "toy"
+        }
+      }
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+2017-02-13T07:50:35.650Z - debug: Final response:
+ {
+  "version": "1.0",
+  "response": {
+    "outputSpeech": {
+      "type": "SSML",
+      "ssml": "<speak>Could not find any food item for toy. Please try different food item. </speak>"
+    },
+    "shouldEndSession": true
+  }
+}
+      ✓ valid response
+      ✓ valid outputSpeech
+
+
+  20 passing (84ms)
+  1 failing
+
+  1) All intents Test GetNextEventIntent apples raw valid outputSpeech:
+     AssertionError: expected '<speak>Your search resulted in 11 food items. Here are the few food items from search. Please add more keywords from this list for better results.apples, raw, without skin, cooked, microwave. apples, raw, gala, with skin. apples, raw, without skin. apples, raw, red delicious, with skin. apples, raw, golden delicious, with skin. apples, raw, granny smith, with skin. crabapples, raw. </speak>' to match /Your search resulted in 9 food items/
+      at Context.<anonymous> (test.js:195:69)
+
+
+

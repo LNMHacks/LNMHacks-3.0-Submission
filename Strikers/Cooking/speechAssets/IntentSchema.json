@@ -1,0 +1,43 @@
+{
+  "intents": [
+    {
+      "intent": "GetNutritionInfo",
+      "slots": [
+        {
+          "name": "FoodItem",
+          "type": "FOOD_ITEMS"
+        }
+      ]
+    },
+    {
+      "intent": "GetNextEventIntent",
+      "slots": [
+      ]
+    },
+    {
+      "intent": "GetQuizIntent"
+    },
+    {
+      "intent": "QuizAnswerIntent",
+      "slots": [
+        {
+          "name": "Answer",
+          "type": "AMAZON.Number"
+        }
+      ]
+    },
+    {
+      "intent": "DontKnowIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
+
