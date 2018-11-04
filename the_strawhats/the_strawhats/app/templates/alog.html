@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<title></title>
+</head>
+<body style="background-image: url({{ url_for('static', filename='images/bg-01.jpg') }});">
+<ul class="nav justify-content-end" style="font-size: 20px;padding-right: 10%;">
+  <li class="nav-item" class="btn btn-dark">
+    <a class="nav-link active"  style="color:black;" href="#">HOME</a>
+  </li>
+  <li class="nav-item" class="btn btn-dark">
+    <a class="nav-link" style="color: black;" href="#">CERTIFICATES</a>
+  </li>
+  <li class="nav-item" class="btn btn-dark">
+    <a class="nav-link" style="color: black; " href="#">LOG OUT</a>
+  </li>
+</ul>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2" style="height: 250px  ;">
+        <img src="{{ url_for('static', filename='images/unknown.jpg') }}" style="width: 237px;height: 248px;position: absolute;left: 1px;right: 1px;">
+</div>
+
+	</div>
+</div>
+<h2 style="padding-left: 13%;">Mark Allen</h2>
+<div class="container"> 
+<table class="table" style="align-content: center;">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ISSUED TO</th>
+      <th scope="col">ISSUED FOR</th>
+      <th scope="col">ISSUED DATE</th>
+      <th scope="col">ISSUER</th>
+      <th scope="col">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1.IT Hackathon</th>
+      <td>Mark</td>
+      <td>Participation</td>
+      <td>13/09/18</td>
+    </tr>
+    {% block certificates %}
+    {% for certificate in my_certificates %}
+    {{certificate}}
+    <tr>
+    <td>{{ certificate.address }}</td>
+    <td>{{ certificate.certi_for }}</td>
+    <td>{{ certificate.doi }}</td>
+    <td>{{ certificate.noia }}</td>
+    <td>{{ certificate.description }}</td>
+    </tr>
+    {% endfor %}
+    {% endblock %}
+    </tbody>
+</table>
+</div>
+<div style="align-content: center;padding-top: 40px;padding-left: 40%;">
+</div>
+</body>
+</html>

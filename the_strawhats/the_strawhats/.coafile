@@ -1,0 +1,7 @@
+[Python]
+files = *.py, app/*.py
+language = Python
+bears = QuotesBear
+preferred_quotation = '
+default_actions = *: ApplyPatchAction
+max_line_length = 249

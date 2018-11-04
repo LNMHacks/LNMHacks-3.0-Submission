@@ -1,0 +1,12 @@
+language: python
+python: 
+  - 3.6
+
+install:
+  - pip install coala
+  - pip install coala-bears
+
+script:
+  - echo "Running Tests"
+  - echo "Running coala"
+  - coala --non-interactive
