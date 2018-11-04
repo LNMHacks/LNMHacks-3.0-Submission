@@ -1,0 +1,102 @@
+##### Team Details #####
+
+Team Name- Admirers
+
+Team Members:
+Manish Rathore
+Himanshu Agarwal
+Hardik Gupta
+Anubhav Jangid
+
+Hack: BattleCode
+Languages: PHP, AJAX, HTML, CSS, JAVASCRIPT, JSON, PYTHON, SQL
+Technologies: DOCKER and GOOGLE COMPUTE ENGINE
+
+
+
+
+
+
+
+
+##### BattleCode #####
+
+BattleCode is a multiplayer coding battle Web application in which two players can compete with each other by joining through an unique invite code. This platform is built for competitive programming and the platform is built using various technologies like virtualization using google compute engine and containerization achieved via docker for platform and libraries isolation.
+
+
+
+
+
+
+
+##### Configuration #####
+
+FrontEnd Functioning:
+battlecode.sql -> This is our database for Web Interface.
+Website Code -> Whole website is coded in Php, HTML, Javascript, CSS, Ajax.
+
+Backend Processing:
+1) Webserver Installation and Configuration (We have used Apache)
+2) Docker Installation and Configuration\
+3) Setting up Docker Images and Environment for different Language Platforms.
+
+docker.py* -> This is cgi-script file used for creating user defined environment containers for execution of respective program.
+
+
+
+
+
+
+
+
+
+##### Detailed Working #####
+
+1) Firstly the user will signup/login at https://prayaascorps.com/battlecode/
+
+2) Then it will be redirected to HomePage where he/she can create or join game.
+
+3) If create button is pressed, then a 5 digit random invite code will be generated and using ajax it is checked in every 10 seconds that his/her opponent have joined the battle using invite code. Whenever the opponent will join the game then this page will automatically redirected to the problem page.
+
+4) If join button is pressed, then he/she need to enter a 5 digit invite code to join the battle and after that it will be redirected to problem page.
+
+5) Now at this stage, both the players are at the problem page, now both will try to code their solution first.
+
+6) Whenever a user submit his/her solution for checking, then the code and the language type will be sent to our GCP Machine through API.
+
+7) Now in gcp machine, this code is fetched by a CGI Script and the container will be launched for that particular language image.
+
+[Note: All the images are configured for each programming language and whenever a user test his program a container of that particular image is launched and get executed in that container, and the result is returned in the JSON format]
+[For testing user programs, we created temporary files for each commit and deployed on respective platform container]
+
+8) Now the output is returned from the cgi-script in the JSON format, so this JSON output is decoded and printed on the user screen.
+
+9) While doing the above execution process, we are updating the status bits for each execution step for verification.
+
+10) The one who will solve the program first will get the winning message and the other one will get losing message via AJAX call.
+
+
+
+
+
+
+
+
+
+
+##### Working from the user side #####
+
+BattleCode can be accessed at https://prayaascorps.com/battlecode/
+
+Person 1:
+1) SignUp/Login to Battlecode.
+2) Create Game.
+3) Share Invite Code with your opponent.
+
+Person 2:
+1) SignUp/Login to Battlecode.
+2) Join Game.
+3) Enter the invite code and submit.
+
+
+After doing the above steps both the users will automatically redirected to the problem page where they need to submit their solution in any of the available languages. The one who will solve this problem first, will won this round.
