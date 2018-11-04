@@ -26,6 +26,7 @@ amzn1.ask.skill.adb13039-35c9-43a8-9fc3-a82ca2fed76a
 
 M2L1RARFIB5OWA
 
+<img src="https://github.com/ojasgulati/LNMHacks-3.0-Submission/blob/master/Strikers/27732eef-2c8c-406a-9734-95134c71c89f.jpeg">
 
 <h1>How our Program will work</h1>
 <b>Just install Our apk in your android phone</b>
