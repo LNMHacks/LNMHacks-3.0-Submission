@@ -2,12 +2,12 @@
 
 An automated parking counter based on cctv footages for parking spots near you.
 
-![detectedimage](/outputs/1.jpeg)
+![detectedimage](/XOR/outputs/1.jpeg)
 
-![appscreens](/outputs/4.jpeg)
-![appscreens](/outputs/2.jpeg)
-![appscreens](/outputs/5.jpeg)
-![appscreens](/outputs/3.jpeg)
+![appscreens](/XOR/outputs/4.jpeg)
+![appscreens](/XOR/outputs/2.jpeg)
+![appscreens](/XOR/outputs/5.jpeg)
+![appscreens](/XOR/outputs/3.jpeg)
 
 ## Getting Started
 
