@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+	
+.text-js{
+  opacity: 0;
+}
+.cursor{
+  display: block;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: -5px;
+  width: 2px;
+
+  background-color: white;
+  z-index: 1;
+  animation: flash 0.5s none infinite alternate;
+}
+@keyframes flash{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+// Rest of CSS (Purely for this pen)
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+*{
+  margin: 0;
+  padding: 0;
+  boz-sizing: border-box;
+  font-family: "Open Sans", sans-serif
+}
+body{
+  background: linear-gradient(135deg,#00C4FF,#9D1BB2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// Text Can be styled just like normal
+.headline{
+  margin: 20px;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  h1{
+    letter-spacing: 1.6px;
+    font-weight: 300;
+  }
+}
+
+.twitterLink{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px 15px;
+  z-index: 3;
+  svg{
+    width: 25px;
+  }
+}
+
+.credit{
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		
+
+function autoType(elementClass, typingSpeed){
+  var thhis = $(elementClass);
+  thhis.css({
+    "position": "relative",
+    "display": "inline-block"
+  });
+  thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+  thhis = thhis.find(".text-js");
+  var text = thhis.text().trim().split('');
+  var amntOfChars = text.length;
+  var newString = "";
+  thhis.text("|");
+  setTimeout(function(){
+    thhis.css("opacity",1);
+    thhis.prev().removeAttr("style");
+    thhis.text("");
+    for(var i = 0; i < amntOfChars; i++){
+      (function(i,char){
+        setTimeout(function() {        
+          newString += char;
+          thhis.text(newString);
+        },i*typingSpeed);
+      })(i+1,text[i]);
+    }
+  },1500);
+}
+
+$(document).ready(function(){
+    
+  autoType(".type-js",200);
+});
+	</script>
+<div class="type-js headline">
+  <h1 class="text-js">Welcome to the DRO_LAM</h1>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://connorgaunt.com" class="credit" target="_blank">
+  Team : " <u>Mujhe Nahi Pata </u>"  XD
+</a>
+
+</body>
+</html>
