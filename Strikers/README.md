@@ -1,7 +1,7 @@
-TEAM NAME - Strikers
+<h2>TEAM NAME - Strikers</h2>
 
 
-A virtual Teacher which can teach you Python, JavaScript and some ethics in English and Hindi<br> 
+<h4>A virtual Teacher which can teach you Python, JavaScript and some ethics in English and Hindi</h4><br> 
 -->It will start from the point where you last left the last class.<br>
 -->We have make some Graphics to make learning simpler.<br>
 -->It can connect to you Smart Phone or Smart Tv to show Presentation's<br>
