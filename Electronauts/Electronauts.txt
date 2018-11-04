@@ -1,0 +1,12 @@
+
+Description:
+
+We built a device which will expand the horizons of Home Automation to a whole new level including every aspects of controlling home appliances. At the same time, we are also planning to making it simple and within the range common people so that everyone can use it accordingly. We have designed it in such a way that to use this device an individual doesn't require any pre-knowledge of technology . So, basically we are trying to build an environment in which we can convert any surface into a remote control to control any sort of home appliance of our choice and along with that we are trying to build an environment for every individual from any age group , able or disabled , literate or illiterate so that they can control anything , anytime by just knocking or tapping on the surface. Our device "Just Knock It" work on the principal of vibration detection on any particular surface wherever we are seated which is totally different from what we are experiencing in the current market scenario (i.e. Voice activated service like Alexa, Google home,etc.) and therefore we found out that it has helped in reducing all previous drawbacks of what we felt was present in all other current Home Automation devices. We are showing its uses only in two cases but we have dreamed it to expand all over in a home, over all appliances and also on any surface near to us. 
+After the campaign is over, we will try to convert this project on product level so that people can buy and use it.
+
+
+Project Directory Content:
+1.	Source codes for Knock side and appliance side.
+
+Link of demo video: 
+https://youtu.be/6wWs_bb9um8
