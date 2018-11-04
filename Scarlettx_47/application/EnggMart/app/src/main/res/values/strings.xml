@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EnggMart</string>
+    <string name="title_activity_main"></string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="enggmarticon">Best Shopping Center for Engineers Easy TO Purchase</string>
+    <string name="newsfeed">News Feeds to Share your Views</string>
+    <string name="chatapps">Chatting Platform to Connect with Users</string>
+    <string name="dls">Digital Library to Read Novels, News &amp; Current Affairs</string>
+    <string name="bsf">Digital Book Store for All Engineering Books</string>
+
+    <string name="facebook_app_id">2183157558638520</string>
+    <string name="fb_login_protocol_scheme">fb2183157558638520</string>
+    <string name="rent_policy">Rent Policy:- 1.Amount to be paid 77% of the MRP \n 2.At time of returning you will get 47% 0f MRP</string>
+
+</resources>

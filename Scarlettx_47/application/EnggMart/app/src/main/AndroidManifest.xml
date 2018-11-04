@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.enggmartservices.enggmart">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.enggmartservices.enggmart.utility.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/em"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <service android:name="com.enggmartservices.enggmart.services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+
+        <!--firebase Messages-->
+        <service android:name="com.enggmartservices.enggmart.services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+        <!--connectivity checker-->
+        <receiver
+            android:name="com.enggmartservices.enggmart.utility.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <!--all Activities-->
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.ProductDescription"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.AdminPannel"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.CurrentAffairsActivity"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.AdminConsole"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.PaymentPage"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.ProductDescription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.HelpCenter"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.UploadNovelAffaires"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.SignInSignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.SignIn"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.Notification"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.UsersActivity"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.ChatActivity"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.UsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.NewsPaperActivity"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.NovelsActivity"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.WritePost"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.ProfileActivity"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.SkillDevlopment"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.enggmartservices.enggmart.activities.PDFViewActivity"
+            android:parentActivityName="com.enggmartservices.enggmart.activities.CurrentAffairsActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.enggmartservices.enggmart.activities.AdminConsole">
+
+    <include layout="@layout/custom_app_bar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:paddingLeft="10dp"
+        android:text="Store Console"
+        android:textColor="#4b7b24"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectanglecornoroffer"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/image_item_to_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:padding="5dp"
+            android:src="@mipmap/photocamera" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/name_item_to_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#70a493"
+                android:gravity="center"
+                android:hint="Item Name"
+                android:maxEms="1"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#c7c2c2"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/price_item_to_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="#70a493"
+                android:gravity="center"
+                android:hint="Item Price"
+                android:inputType="phone"
+                android:maxEms="1"
+                android:textColor="#000"
+                android:textColorHint="#c7c2c2"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:background="#b7d6d9">
+
+            <EditText
+                android:id="@+id/description_item_to_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter item description..."
+                android:maxHeight="150dp"
+                android:textColor="#000"
+                android:textColorHint="#716d6d"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_item_to_server"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="#b61111"
+            android:text="Submit"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>
