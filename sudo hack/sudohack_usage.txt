@@ -40,8 +40,8 @@ TO RUN PNEUMONIA_DETECTION model
 
   USAGE -
 
-
-* you need to run check.py  given in submission folder  using python 3.6 version and it runs with administrator permission
+     -    download test dataset from link given in readme file after cloning and changing directory to clone dir
+     -    you need to run check.py  given in submission folder  using python 3.6 version and it runs with administrator permission
      -    Testing to new dataset, need to change path  to  path of new dataset
      -    submission.csv file will be generated as prediction result of model.
 
