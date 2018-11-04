@@ -47,3 +47,37 @@ Enter user email address
 example: sample@gmail.com
 Enter tv series information requirement separating with comma
 example: Game of thrones, black mirror, da vinci demons, breaking bad
+
+
+Input from user TV series Choices
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/LNMHacks-3.0-Submission/blob/master/HackThree/images/InputDataBase.png" width="500" title="hover text">
+</p>
+ 
+
+Movie Choice Mailing
+
+<p align="center">
+    <img src="https://github.com/Parulshandilya/LNMHacks-3.0-Submission/blob/master/HackThree/images/MovieMail.png" width="500" title="hover text">
+  </p>
+
+
+Information about the TV series is scrapped from imdb page of the series using the ID :
+
+<p align="center">
+  <img src="https://github.com/JainishShah/innovacer-platform/blob/master/imdb1.png" width="500" title="hover text">
+</p>
+ 
+ Movie recommendation terminal
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/LNMHacks-3.0-Submission/blob/master/HackThree/images/MovieRecommendation.png" width="500" title="hover text">
+</p>
+ 
+ 
+
+TV series database
+
+ <p align="center">
+  <img src="https://github.com/Parulshandilya/LNMHacks-3.0-Submission/blob/master/HackThree/images/TVSeriesDataBase.png" width="500" title="hover text">
+</p>
+
