@@ -1,0 +1,70 @@
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready
+		(
+			function()
+			{
+				$(".signupbox").hide();
+				$(".login").css("background","none");
+				$(".login").click
+				(
+					function()
+					{
+						$(".signupbox").hide();
+						$(".loginbox").show();
+						$(".signup").css("background","none")
+						$(".login").css("background","#000");
+					}
+				);
+				$(".signup").click
+				(
+					function()
+					{
+						$(".signupbox").show();
+						$(".loginbox").hide ();
+						$(".signup").css("background","#000")
+						$(".login").css("background","none");
+					}
+				);
+			}
+		);
+	</script>
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="signup">Sign Up</div>
+		<div class="login">Log In</div>
+	</div>
+	<div class="signupbox">
+		<img src="icon.png" class="icon">
+		<h1>SignUp</h1>
+		<form method="post" action="login1.php">
+		<input type="text" name="email" placeholder="Enter Email-ID" ><br>
+		<input type="text" name="uname" placeholder="Choose Username"><br>
+		<input type="password" name="password" placeholder="Choose Password"><br>
+		<input type="submit" name="signup" value="SignUp">
+		</form>
+	</div>
+	<div class="loginbox">
+		<img src="icon.png" class="icon">
+		<h1>Login</h1>
+		<form method="post" action="login2.php">
+			<p>Username</p>
+			<input type="text" name="uname" placeholder="Enter Username">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter Password">
+			<input type="submit" name="login" value="Login">	
+			<a href="#">Forgot Password</a><br>
+		</form>
+	</div>
+	
+</body>
+</html>

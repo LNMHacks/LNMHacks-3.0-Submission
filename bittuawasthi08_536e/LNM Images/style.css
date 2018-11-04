@@ -1,0 +1,200 @@
+*
+{
+margin:0;
+padding:0;
+user-select:none;
+}
+body
+{
+margin:0;
+padding:0;
+background-image:url('5759933-background-hd.png');
+background-size:cover;
+background-position:center;
+font-family:sans-serif;
+}
+
+.signupbox,.loginbox
+{
+clear:both;
+width:320px;
+height:420px;
+background:#000;
+color:#fff;
+top:50%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:70px 30px;
+}
+
+
+.query
+{
+clear:both;
+width:320px;
+height:420px;
+background:#000;
+color:#fff;
+top:70%;
+left:50%;
+position:absolute;
+transform:translate(-50%,-50%);
+box-sizing:border-box;
+padding:70px 30px;
+}
+
+.icon
+{
+width:70px;
+height:70px;
+border-radius:50%;
+position:absolute;
+top:-3px;
+left:calc(50% - 36px);
+}
+
+h1
+{
+margin:0;
+padding:0 0 20px;
+text-align:center;
+font-size:22px;
+}
+
+.signupbox p,.loginbox p
+{
+margin:0;
+padding:0;
+font-weight:bold;
+}
+
+.query p
+{
+margin:0;
+padding:0;
+font-weight:bold;
+}
+.loginbox input, .signupbox input
+{
+box-sizing:border-box;
+padding:20px;
+width:100%;
+margin-bottom:20px;
+}
+
+.query input
+{
+box-sizing:border-box;
+padding:20px;
+width:100%;
+margin-bottom:20px;
+}
+
+
+.signupbox input[type="text"], input[type="password"], .loginbox input[type="text"], input[type="password"]
+{
+border:none;
+border-bottom:1px solid #fff;
+background:transparent;
+outline:none;
+height:40px;
+color:#fff;
+font-size:16px;
+}
+
+.query input[type="text"], input[type="password"]
+{
+border:none;
+border-bottom:1px solid #fff;
+background:transparent;
+outline:none;
+height:40px;
+color:#fff;
+font-size:16px;
+}
+
+
+.signupbox input[type="submit"], .loginbox input[type="submit"]
+{
+border:none;
+outline:none;
+height:40 px;
+background:#fb2525;
+color:#fff;
+font-size:18px;
+border-radius:20px;
+}
+
+.query input[type="submit"]
+{
+border:none;
+outline:none;
+height:40 px;
+background:#fb2525;
+color:#fff;
+font-size:18px;
+border-radius:20px;
+}
+
+
+.signupbox input[type="submit"]:hover, .loginbox input[type="submit"]:hover
+{
+cursor:pointer;
+background:#ffc107;
+color:#000;
+}
+
+.query input[type="submit"]:hover
+{
+cursor:pointer;
+background:#ffc107;
+color:#000;
+}
+
+
+.signupbox a, .loginbox a
+{
+text-decoration:none;
+font-size:12px;
+line-height:20px;
+color:darkgrey;
+}
+
+.query a
+{
+text-decoration:none;
+font-size:12px;
+line-height:20px;
+color:darkgrey;
+}
+
+
+.signupbox a:hover, .loginbox a:hover
+{
+color:#ffc107;
+}
+
+.query a:hover
+{
+color:#ffc107;
+}
+
+.container
+{
+width:320px;
+margin:120px auto;
+}
+
+.signup,.login
+{
+color:#fff;
+width:50%;
+background:#000;
+height:60px;
+float:left;
+text-align:center;
+line-height:60px;
+text-transform:uppercase;
+}
