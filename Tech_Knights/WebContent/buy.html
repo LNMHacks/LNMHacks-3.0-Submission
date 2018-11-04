@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TrashSters</title>
+<link rel="stylesheet" href="pay.css">
+<script src = "pay.js"></script>
+	
+</head>
+<body>
+<div class="wrapper">
+  <nav>
+    <a href="#">Product details</a>
+    <a href="#">Shipping</a>
+    <a href="#">Payment</a>
+  </nav>
+  <div class="finishtitle"><span>Finish</span> Purchase!</div>
+  <div class="container">
+    <div class="heading">Choose Payment Method</div>
+    <div class="choose">
+     <div id="active" class="visa active"><input id="visa" name="choose" type="radio"> <label for="visa"><img src="https://cryptonews.pl/wp-content/uploads/2017/07/Visa.jpeg" alt="visa" /> </label></div>
+      <div class="maestro"><input id="maestro" name="choose" type="radio"> <label for="maestro"><img src="https://www.mastercard.pl/pl-pl/klienci-indywidualni/produkty/karty-debetowe-mastercard/karta-maestro/_jcr_content/contentpar/herolight/image.adaptive.319.low.png/1493218561825.png" alt="visa" /></label></div>
+      <div class="paypal"><input id="paypal" name="choose" type="radio"> <label for="paypal"><img src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png" alt="visa" /> </label></div>
+    </div>
+    <form autocomplete="off" class="payform" action="#">
+      <input type="text" name="name" class="accname" placeholder="Account Holder Name">
+      <input type="text" name="cardnumber" class="cardnumber" placeholder="Credit Card Number">
+      <input type="text" name="cvv" class="cvv" placeholder="CVV/CVV2">
+      <input type="reset" class="reset" value="Cancel">
+      <input type="submit" class="submit" value="Submit">
+    </form>
+  </div>
+</div>
+</body>
+</html>
