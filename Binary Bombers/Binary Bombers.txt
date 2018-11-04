@@ -1,1 +1,28 @@
+Team Name - Binary Bombers
+Members - Shubham Sharma (Leader)
+          Naman Agrawal
+          
+Project Title - arGURUJI
+Theme - Computer Vision, Education
+Platform - Android
+Tech Stack :-
+Image Recognition - OpenCV
+Game Engine - Unity3D
+AR SDK - Vuforia 
+
+Description :-
+We are making break throughs in every industry but still our education system is traditional and wasters many important resoures.
+So why not cahange it we have come up with an idea which users Artifical Inteligince With Computer Vision to make use of marker augmented reality to blend reality with the virtual world to create a imersive studing experince.
+Using our app the students will be able to project virual objects and complex models on simple text and logos.
+
+Installation :-
+1> Download and Install APK from this repo in folder "Binary Bombers"(arguruji.apk).
+2> Open app.
+3> Open ppt in a different device and go to last to slides.
+4> Now point the app on the images one by one.
+**If results as shown in demo video don't show please call us we will do a 5 min demo
+
 PPT link - https://docs.google.com/presentation/d/1jy4EqeYwHsDGhwnPh6-5Ei3fRPoOnlWcYZdfJW2QYDU/edit?usp=sharing
+Demo Video - 
+
+
