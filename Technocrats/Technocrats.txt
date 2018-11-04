@@ -1,0 +1,15 @@
+A description of your project:
+Our Project named "BREATHE" aims at providing support and help to the ones in need.
+We aim to provide a centralised system for storing data about donors and those in need of organs, while maintaining anonymity between them.
+We will provide flash notifications to the recipients in case an organ is available nearby in a hospital registered in our channel. 
+The notification will be redirected to the filtered users who are in need of the specified organ.
+All documents (Letter of Approval/Prescription/Tests) will be uploaded on an online portal and undergo checking by a medical officer . 
+
+
+The contents of your project directory:
+breathe contains database for working of the program
+Pulkit_Jain_12S1 contains Java project
+
+Ways to host your project on the localhost:
+Req: JRE, JDK, MySQL, Net Beans IDE
+Import the project Pulkit_Jain_12S1 file using net beans and run.
