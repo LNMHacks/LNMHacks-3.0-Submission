@@ -29,5 +29,6 @@ M2L1RARFIB5OWA
 
 <h1>How to execute the file</h1>
 </br>
-Install android app
+<b>Install android app</b>
 </br>
+<b>Go to Python skill <a href=""> </b>
