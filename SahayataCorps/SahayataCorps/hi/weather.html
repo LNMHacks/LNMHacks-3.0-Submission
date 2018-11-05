@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+			
+		<title>Weather Forecast</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+
+	<body>
+		
+<div class="site-content">
+			<div class="site-header">
+				<div class="container">
+					<a href="index.html" class="branding">
+						<img src="images1/logo.png" alt="" class="logo">
+						<div class="logo-type">
+							<h1 class="site-title">Krishi Seva</h1>
+							<small class="site-description">Please allow gps to know your location</small>
+						</div>
+					</a>
+
+					<!-- Default snippet for navigation -->
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+							
+						</ul> <!-- .menu -->
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+
+				</div>
+			</div> <!-- .site-header -->
+
+			<div class="hero" data-bg-image="images1/banner.png">
+				<div class="container">
+					<form action="#" class="find-location">
+						<input type="text" placeholder="Find your location..." id = 'out'>
+						<input type="submit" value="Find" id='but'>
+					</form>
+
+				</div>
+			</div>
+			<div class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+						<div class="today forecast">
+							<div class="forecast-header">
+								<div class="day" id = 'day1'>...</div>
+								<div class="date" id = 'date1'>...</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="location" id='location'>...  </div>
+
+								<div class="degree">
+									<div class="num" id='degree1'>...<sup>o</sup>C</div>
+									<div class="forecast-icon">
+										<img src="images1/icons/icon-1.svg" alt="" width=90 id='img1'>
+									</div>	
+								</div>
+
+								<div id='low1' class="location">...</div>
+								<!--<span><img src="images/icon-wind.png" alt="">18km/h</span>
+								<span><img src="images/icon-compass.png" alt="">East</span> -->
+							</div>
+						</div>
+							<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Astronomy</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								
+									
+									<div class="location"><b>Sunrise:</b> <div id='sunrise'>...</div> </div>
+									<br>
+									<div class="location"><b>Sunset:</b> <div id='sunset'>...</div>
+									</div>
+									
+							
+						</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Wind</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								
+									
+									<b>Chill:</b> <div id='chill'>...</div> 
+									<br>
+									<b>Direction:</b> <div id='direction'>...</div>
+									<br>
+									<b>Speed:</b> <div id='speed'>...</div>
+									
+							
+						</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day">Atmosphere</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								
+									
+									<b>Pressure:</b> <div id='pressure'>...</div> 
+									<br>
+									<b>Humidity:</b> <div id='humidity'>...</div>
+									<br>
+									<b>Visibility:</b> <div id='visibility'>...</div>
+									
+							
+						</div>
+						</div>
+						</div>
+						</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<div class="forecast-table">
+				<div class="container">
+					<div class="forecast-container">
+						
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day" id='day2'>...</div>
+								<div class="date" id = 'date2'>...</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images1/icons/icon-3.svg" alt="" width=48 id='img2'>
+								</div>
+								<div class="degree" id='degree2'>...<sup>o</sup>C</div>
+								<div id='low2' class="location">...</div>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day" id='day3'>...</div>
+								<div class="date" id = 'date3'>...</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images1/icons/icon-3.svg" alt="" width=48 id='img3'>
+								</div>
+								<div class="degree" id='degree3'>...<sup>o</sup>C</div>
+								<div id='low3' class="location">...</div>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day" id='day4'>...</div>
+								<div class="date" id = 'date4'>...</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images1/icons/icon-3.svg" alt="" width=48 id='img4'>
+								</div>
+								<div class="degree" id='degree4'>...<sup>o</sup>C</div>
+								<div id='low4' class="location">...</div>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day" id='day5'>...</div>
+								<div class="date" id = 'date5'>...</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images1/icons/icon-3.svg" alt="" width=48 id='img5'>
+								</div>
+								<div class="degree" id='degree5'>...<sup>o</sup>C</div>
+								<div id='low5' class="location">...</div>
+							</div>
+						</div>
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day" id='day6'>...</div>
+								<div class="date" id = 'date6'>...</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images1/icons/icon-3.svg" alt="" width=48 id='img6'>
+								</div>
+								<div class="degree" id='degree6'>...<sup>o</sup>C</div>
+								<div id='low6' class="location">...</div>
+							</div>
+						</div>
+						
+						<div class="forecast">
+							<div class="forecast-header">
+								<div class="day" id='day7'>...</div>
+								<div class="date" id = 'date7'>...</div>
+							</div> <!-- .forecast-header -->
+							<div class="forecast-content">
+								<div class="forecast-icon">
+									<img src="images1/icons/icon-3.svg" alt="" width=48 id='img7'>
+								</div>
+								<div class="degree" id='degree7'>...<sup>o</sup>C</div>
+								<div id='low7' class="location">...</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							
+						</div>
+						<div class="col-md-3 col-md-offset-1">
+							
+						</div>
+					</div>
+
+					
+				</div>
+			</footer> <!-- .site-footer -->
+		</div>
+		
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript">
+     
+     var add = document.getElementById("out");
+     add.value = localStorage.getItem('loc');
+
+      function displayLocation(latitude,longitude){
+        var request = new XMLHttpRequest();
+
+        var method = 'GET';
+        var url = 'https://maps.googleapis.com/maps/api/geocode/json?latlng='+latitude+','+longitude+'&key=AIzaSyCSpP9jacPrkEYsR4YvBndINJlmdq5OAKs'
+       // var url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='+latitude+','+longitude+'&sensor=true';
+        var async = true;
+
+        request.open(method, url, async);
+        request.onreadystatechange = function(){
+          if(request.readyState == 4 && request.status == 200){
+            var data = JSON.parse(request.responseText);
+            var address = data.results[0].address_components;
+             for (var p = address.length-1; p >= 0; p--) {
+      if (address[p].types.indexOf("administrative_area_level_2") != -1) {
+        add.value = address[p].long_name;
+        localStorage.setItem('loc',add.value);
+        
+      }
+    }
+
+            
+          }
+        }
+        request.send();
+      };
+
+   		var successCallback = function(position){
+        
+        var x = position.coords.latitude;
+        var y = position.coords.longitude;
+        displayLocation(x,y);
+      };
+
+      var errorCallback = function(error){
+        var errorMessage = 'Unknown error';
+        switch(error.code) {
+          case 1:
+            errorMessage = 'Enter the location below';
+            break;
+          case 2:
+            errorMessage = 'Position unavailable';
+            break;
+          case 3:
+            errorMessage = 'Timeout';
+            break;
+        }
+        alert(errorMessage);
+      };
+
+      var options = {
+        enableHighAccuracy: true,
+        timeout: 100000,
+        maximumAge: 0
+      };
+      
+      navigator.geolocation.getCurrentPosition(successCallback,errorCallback,options);
+       $('#but').click(function(){
+      var cy = $('#out').val();
+  var searchtext = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + cy + "') and u='c'"
+  //change city variable dynamically as required
+  $.getJSON("https://query.yahooapis.com/v1/public/yql?q=" + searchtext + "&format=json").success(function(data){
+   console.log(data);
+   $('#day1').html(data.query.results.channel.item.forecast[0].day);
+   $('#date1').html(data.query.results.channel.item.forecast[0].date);
+   $('#location').html(cy);
+   $('#degree1').html(data.query.results.channel.item.forecast[0].high+' &degC');
+   $('#low1').html(data.query.results.channel.item.forecast[0].low +' &degC');
+   $('#sunrise').html(data.query.results.channel.astronomy.sunrise);
+   $('#sunset').html(data.query.results.channel.astronomy.sunset);
+   $('#chill').html(data.query.results.channel.wind.chill);
+   $('#direction').html(data.query.results.channel.wind.direction);
+   
+   $('#speed').html(data.query.results.channel.wind.speed + " "+data.query.results.channel.units.speed);
+   $('#pressure').html(data.query.results.channel.atmosphere.pressure+" "+data.query.results.channel.units.pressure);
+   $('#humidity').html(data.query.results.channel.atmosphere.humidity+" %");
+   $('#visibility').html(data.query.results.channel.atmosphere.visibility+" "+data.query.results.channel.units.distance);
+   $("#img1").attr("src","http://l.yimg.com/a/i/us/we/52/"+data.query.results.channel.item.forecast[0].code+".gif");
+   //$('#temp').html("Temperature in " + cy + " is " + data.query.results.channel.item.condition.temp + "°C");
+   //Day2
+   $('#day2').html(data.query.results.channel.item.forecast[1].day);
+   $('#date2').html(data.query.results.channel.item.forecast[1].date);
+   $("#img2").attr("src","http://l.yimg.com/a/i/us/we/52/"+data.query.results.channel.item.forecast[1].code+".gif");
+   $('#low2').html(data.query.results.channel.item.forecast[1].low +' &degC');
+   $('#degree2').html(data.query.results.channel.item.forecast[1].high+' &degC');
+   //Day3
+    $('#day3').html(data.query.results.channel.item.forecast[2].day);
+   $('#date3').html(data.query.results.channel.item.forecast[2].date);
+   $("#img3").attr("src","http://l.yimg.com/a/i/us/we/52/"+data.query.results.channel.item.forecast[2].code+".gif");
+   $('#low3').html(data.query.results.channel.item.forecast[2].low +' &degC');
+   $('#degree3').html(data.query.results.channel.item.forecast[2].high+' &degC');
+   //Day4
+    $('#day4').html(data.query.results.channel.item.forecast[3].day);
+   $('#date4').html(data.query.results.channel.item.forecast[3].date);
+   $("#img4").attr("src","http://l.yimg.com/a/i/us/we/52/"+data.query.results.channel.item.forecast[3].code+".gif");
+   $('#low4').html(data.query.results.channel.item.forecast[3].low +' &degC');
+   $('#degree4').html(data.query.results.channel.item.forecast[3].high+' &degC');
+    //Day5
+    $('#day5').html(data.query.results.channel.item.forecast[4].day);
+   $('#date5').html(data.query.results.channel.item.forecast[4].date);
+   $("#img5").attr("src","http://l.yimg.com/a/i/us/we/52/"+data.query.results.channel.item.forecast[4].code+".gif");
+   $('#low5').html(data.query.results.channel.item.forecast[4].low +' &degC');
+   $('#degree5').html(data.query.results.channel.item.forecast[4].high+' &degC');
+	//Day6
+    $('#day6').html(data.query.results.channel.item.forecast[5].day);
+   $('#date6').html(data.query.results.channel.item.forecast[5].date);
+   $("#img6").attr("src","http://l.yimg.com/a/i/us/we/52/"+data.query.results.channel.item.forecast[5].code+".gif");
+   $('#low6').html(data.query.results.channel.item.forecast[5].low +' &degC');
+   $('#degree6').html(data.query.results.channel.item.forecast[5].high+' &degC');  
+   //Day7
+    $('#day7').html(data.query.results.channel.item.forecast[6].day);
+   $('#date7').html(data.query.results.channel.item.forecast[6].date);
+   $("#img7").attr("src","http://l.yimg.com/a/i/us/we/52/"+data.query.results.channel.item.forecast[6].code+".gif");
+   $('#low7').html(data.query.results.channel.item.forecast[6].low +' &degC');
+   $('#degree7').html(data.query.results.channel.item.forecast[6].high+' &degC');
+  });
+})
+       //$(document).ready();
+
+</script>
+
+		
+	</body>
+
+</html>

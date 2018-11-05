@@ -1,0 +1,17 @@
+
+.booth-capture-button{
+	display: block;
+	margin: 1% 0;
+	padding: 1% 2%;
+	background-color: cornflowerblue;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+#canvas{
+	display: none;
+}
+
+.hidd{
+	display:none;
+}
