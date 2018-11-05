@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<title>Fact Face</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet" type='text/css'> 
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css"> 
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-lg visible-md">
+						<div id="logo" alt="Logo"></div>
+					</a>
+
+					<div class="navbar-brand">
+						<a href="index.html"><h1>Fact Face</h1></a>
+
+					</div>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        </button>  
+			     </div>
+
+			     <div id="collapsable-nav" class="collapse navbar-collapse">
+			     	<ul id="nav-list" class="nav navbar-nav navbar-right">
+			     		<li class="visible-xs active">
+			     			<a href="index.html">
+			     				<span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home
+			     			</a>
+			     		</li>
+			     		<li>
+			     			<a href="Pages/Documentation.html">
+			     				<span class="glyphicon glyphicon-th-large"></span><br class="hidden-xs">Documentation
+			     			</a>
+			     		</li>
+			     		<li>
+			     			<a href="Pages/About.html">
+			     				<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs">About
+			     			</a>
+			     		</li>
+
+			     	</ul>
+			     	
+			     </div>  
+			</div>
+		</nav>
+	</header>
+
+	<div id="main-content" class="container">
+			<div class="input-group input-group-lg">
+  				<span class="input-group-addon" id="sizing-addon1">Input article here -></span>
+  				<input id="article" type="text" class="form-control" placeholder="Article" aria-describedby="sizing-addon1">
+			</div>
+			<div id="button" class="text-center">
+				<button onclick="Wait()">Analyse</button> 
+			</div>
+
+			<div id="loading">
+				 <div class="loader"></div>
+			</div>
+			<div id="pro" class="text-center"><h3>Processing....</h3></div>
+
+			<div id="result">
+				
+			</div>
+	</div>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

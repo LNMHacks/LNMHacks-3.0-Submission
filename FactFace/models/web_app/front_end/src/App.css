@@ -1,0 +1,46 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+}
+
+.App-header {
+    background-color: #666;
+    height: 35%;
+    padding: 20px;
+    color: white;
+}
+
+.searchBar {
+    margin-top: 12.5%;
+    margin-bottom: 12.5%;
+
+    height: 60%;
+    width: 80%;
+}
+
+.howThisWorks {
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.flash {
+    opacity: 0.01;
+}
+
+.flash.flash-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.leave {
+    opacity: 1;
+}
+
+.leave.leave-active {
+    opacity: 0.01;
+    transition: opacity 300ms ease-in;
+}
