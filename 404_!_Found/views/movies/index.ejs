@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- Required meta tags -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+      <title>Main Page</title>
+  
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main_page.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
+  <!-- Semantic UI CDN Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/card.min.css">
+   
+</head>
+<body>
+
+<!--- ===============================================================================================================================================Navigation Bar ====================================================================================================================================================================  -->
+ 
+<nav class="navbar navbar-inverse ">
+
+  <div class="container-fluid">
+      <a class="navbar-brand" href="/movies">
+    
+     <img src="/images/final_logo.png" width="200" height="100" class="d-inline-block align-top" alt="" style="position:absolute; left:0px; bottom:0px;">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; <b>MOVIE INFO</b></a>
+   
+      <div class="nav navbar-nav navbar-right">
+        <a href="/profile"><button class="btn btn-outline movie-card__button" type="button"><%= currentUser.username %></button></a>
+           &ensp;&ensp;&ensp; <a href="/logout"><button class="btn btn-outline movie-card__button" type="button">Sign Out</button></a>
+      
+         
+         </div>
+        
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+<!-- ================================================================================================================================================Search Section =====================================================================================================================================================================-->
+
+   
+
+
+
+    <div class="container animated bounceIn">
+       <div class="jumbotron">
+          <h3 class="text-center" style="color:#fff;font-size: 30px;"><strong>Search Any Movie</strong></h3>
+
+          <form id="searchForm" action="/movies/index" method="GET">
+            <input type="text" class="form-control" id="searchText" name="name" placeholder="SEARCH MOVIE">
+          </form>
+
+        </div>
+      </div>
+
+
+  <div class="container">
+    <div id="movies" class="row"></div>
+  </div>
+ 
+
+</br>
+
+ 
+ 
+
+  <!--===========================================================================================================================================Trending Section====================================================================================================================================================================-->
+
+  <h1 style="font-family:Nunito,arial; color:#fff;text-align:center;">TRENDING MOVIES</h1>
+  <br>
+
+
+<div class="ui stackable grid container" style="margin-left: 7%;">
+	<% data["results"].forEach(function(movie){ %>
+		<div class="five wide tablet four wide computer column">
+			<div class="ui fluid card">
+				<div class="image">
+					<% if (movie["poster_path"] === null) { %>
+						<img src="https://www.directv.com/img/movies.jpg">
+					<% } else { %>
+						<img src='https://image.tmdb.org/t/p/w500/<%= movie["poster_path"] %>'>
+					<% } %>
+				</div>
+				<div class="content">
+	      			<div class="header">
+	      				<%= movie["original_title"] %>
+	      			</div>
+	      			<div class="meta">
+	      				<a href='/movies/<%= movie["id"] %>'>See More</a>
+	      			</div>
+	      		</div>
+	      		<div class="extra content">
+	      			<span class="right floated">
+			        	Released:  <strong><%= movie["release_date"] %></strong>
+			      	</span>
+			      	<span>
+				        <i class="star icon"></i>
+				        <strong><%= movie["vote_average"] %></strong>
+				    </span>
+	      		</div>
+			</div>
+		</div>
+	<% }); %>
+</div>
+
+
+
+ <!--=================================================================================
+  ==============================Footer Section========================================
+  =========================================================================== -->
+ <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark"style="background-color:#232b2b;">
+
+    <div style="background-color: #3b444b">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0>
+            <h6 class="mb-0">.</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+             <p>.</p>
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5" style="background-color:   #232b2b;">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">MOVIE INFO</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>MOVIE INFO is a RESTful web service to obtain movie information.Here you will get the best reviews and Information about the Movies you want to watch.</p>
+
+        </div>
+        
+        <div class="col-md-4 col-lg-4col-xl-4 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          
+         <a href="https://github.com/Dharmesh-Poddar"><i class="fab fa-github"></i>Dharmesh Poddar</a></br>
+
+          
+          
+            <a href="https://github.com/Kristency"><i class="fab fa-github"></i>Subhajit Nandi</a>
+                    </br>
+
+            <a href="https://github.com/iamakshatjain"><i class="fab fa-github"></i>Akshat Jain</a>
+                   </br>
+
+            <a href="https://github.com/Sourabhtripathi"><i class="fab fa-github"></i>Sourabh Tripathi</a>
+             </br>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-home mr-3"></i> JAIPUR ,302031</p>
+          <p>
+            <i class="fa fa-envelope mr-3"></i> dharmeshpoddar3@gmail.com</p>
+          <p>
+            <i class="fa fa-phone mr-3"></i> 09323435674</p>
+          <p>
+            <i class="fa fa-print mr-3"></i> 8786554452</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> Thanks For your Visit
+    
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
