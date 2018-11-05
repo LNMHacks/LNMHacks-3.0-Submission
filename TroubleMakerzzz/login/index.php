@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  <meta charset="UTF-8">
+  <title>Login &amp; Sign Up</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+      <link rel="stylesheet" href="style.css">
+<script src="index.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+  <div class="cotn_principal">
+<div class="cont_centrar">
+
+  <div class="cont_login">
+<div class="cont_info_log_sign_up">
+      <div  id="login" class="col_md_login">
+<div class="cont_ba_opcitiy">
+
+        <h2>LOGIN</h2>
+  <p>Already a user? Then, please oblige to click here.</p>
+  <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+  </div>
+  </div>
+<div class="col_md_sign_up">
+<div class="cont_ba_opcitiy">
+  <h2>SIGN UP</h2>
+
+
+  <p>New to us. We are here to help you.</p>
+
+  <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+</div>
+  </div>
+       </div>
+
+
+    <div class="cont_back_info">
+       <div class="cont_img_back_grey">
+       <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&amp;q=50&amp;fm=jpg&amp;crop=entropy&amp;s=7686972873678f32efaf2cd79671673d" alt="">
+       </div>
+
+    </div>
+<div class="cont_forms">
+    <div class="cont_img_back_">
+       <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&amp;q=50&amp;fm=jpg&amp;crop=entropy&amp;s=7686972873678f32efaf2cd79671673d" alt="">
+       </div>
+ <form action="login.php" method="POST" class="cont_form_login" style="display: none; opacity: 0;">
+<a href="#" onclick="ocultar_login_sign_up_forgo()"><i class="material-icons"></i></a>
+   <h2>LOGIN</h2>
+ <input type="text" placeholder="Email" name="email">
+<input type="password" placeholder="Password" name="password">
+<button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+<br>
+<p id="forgot" onclick="cambiar_forgo()">Forget Password?</p>
+  </form>
+
+
+   <form action="forgotPassword.php" method="POST" class="cont_form_forgo" style="display:none; opacity: 0;">
+  <a href="#" onclick="ocultar_login_sign_up_forgo()"><i class="material-icons"></i></a>
+     <h2>FORGET PASSWORD</h2>
+   <input type="text" placeholder="Email" name="email">
+  <button class="btn_login" onclick="cambiar_forgo()">Send reset link to mail</button>
+
+  <h4 onclick="cambiar_login()">Back to login page</h4>
+ </form>
+
+
+
+
+
+
+
+   <form action="register.php" method="POST" class="cont_form_sign_up" style="opacity: 0; display: none;">
+<a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons"></i></a>
+     <h2>SIGN UP</h2>
+<input type="text" placeholder="Email" name="email">
+<input type="text" placeholder="Name" name="name">
+<input type="password" placeholder="Password" name="password">
+<input type="password" placeholder="Confirm Password" name="password1">
+<button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+  </form>
+
+    </div>
+
+  </div>
+ </div>
+</div>
+
+
+
+
+
+
+
+
+<div style="text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_troublemakerzzzz&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div>
+
+
+</body>
+</html>

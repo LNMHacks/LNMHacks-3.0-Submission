@@ -1,0 +1,18 @@
+#search{
+    width: 300px;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+}
+button{
+    position: relative;
+    left: 50px;
+}
+.aligning{
+    margin-left: 700px;
+    margin-top: 20px;
+}
+#imagebutton{
+    position: relative; 
+}

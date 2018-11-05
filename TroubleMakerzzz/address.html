@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>about libraries</title>
+  </head>
+  <style media="screen">
+
+  .header1 {
+    padding: 5px 8px;
+    z-index: 1000;
+    background:url("tirza-van-dijk-302-unsplash.jpg");
+
+
+  }
+.header1 h2{
+  font-size: 2vw;
+  margin-left: 5%;
+  color: black;
+}
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
+  .search
+  {width: 35%;
+    overflow: auto;
+    top: 1%;
+    left: 55%;
+    position: absolute;
+    border-radius: 35px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+
+  .search input[type="text"]
+  {
+    border: 0px;
+    width: 82%;
+    padding: 10px 10px;
+  }
+
+  .search input[type="text"]:focus
+  {
+    outline: 0;
+
+  }
+
+  .search input[type="submit"]
+  {
+    border: 0px;
+    background: none;
+    background-color:teal;
+    color: #fff;
+    float: right;
+    padding: 10px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+          cursor:pointer;
+  }
+  .search input[type="submit"]:hover{
+    background-color: maroon;
+  }
+  /* ===========================
+     ====== Medua Query for Search Box ======
+     =========================== */
+  .box{
+  height: 100%;
+
+  }
+  .footer{
+  height: 30%;
+  top: 120%;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  background:#060717;
+  }
+  /*.right {
+  width: 30%;
+  margin-right:  1%;
+  float: right;
+  }*/
+     .nav {
+       height:70px;
+       width: 100%;
+       border-bottom: .1px solid gray;
+       background-color:black;
+       position: relative;
+     }
+
+     .nav > .nav-header {
+       display: inline;
+     }
+
+     .nav > .nav-header > .nav-title {
+       display: inline-block;
+       font-size: 22px;
+       color:black;
+       float: left;
+       margin-left: 2%;
+       padding: 10px 10px 10px 10px;
+     }
+
+     .nav > .nav-btn {
+       display: none;
+       color: black;
+     }
+
+     .nav > .nav-links {
+       display: inline;
+       text-transform: capitalize;
+       float:left;
+
+       font-size: 18px;
+     }
+
+     .nav > .nav-links > a {
+       display: inline-block;
+       padding: 13px 10px 13px 10px;
+       text-decoration: none;
+       color:white;
+       font-size: 120%;
+       font-weight: bold;
+     }
+
+
+     .nav > #nav-check {
+       display: none;
+     }
+
+     body {
+       background-color: #f9f9f9;
+       margin: 0px;
+       font-family: 'segoe ui';
+     }
+     nav {
+
+       width: 5%;
+       float: right;
+       margin-top: 1%;
+       margin-right: 5%;
+  background-color: black;
+  }
+
+  nav ul {
+  padding: 0;
+   margin: 0;
+  background-color: black;
+  list-style: none;
+  width: 100px;
+  z-index: 1000;
+  position: relative;
+  }
+
+  nav ul li {
+  display:inline-block;
+  font-family: source sans pro;
+  margin-top: 4%;
+  background-color:black;
+  }
+
+  nav a {
+  display:block;
+  padding:0 5px;
+  line-height: 30px;
+
+  color:#FFF;
+  font-size:1.2vw;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration:none;
+  }
+
+  nav a:hover {
+  background-color: #000000;
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+  display: none;
+  position: absolute;
+  top: 30px; /* the height of the main nav */
+  }
+
+  /* Display Dropdowns on Hover */
+  nav ul li:hover > ul {
+  display:inherit;
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+  width:100px;
+  float:none;
+  display:list-item;
+  position: relative;
+  }
+  .left {
+    width: 100%;
+    position: relative;
+    height: auto;
+    float: left;
+    background-color: #070617;
+  }
+  .left .col {
+    width:30%;
+    height: auto;
+    float:left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .left .col1{
+    width:30%;
+    float:right;
+    padding: 0;
+  }
+  #address{
+    color: white;
+    text-align: center;
+  }
+  .left .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .left .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .left .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+
+  .left .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+
+.Box{
+  width:100%;
+  /*background:url("12.jpg");*/
+  height:110vh;
+  background-color: #f2f3f5;
+background-color: #20024a;}
+.left1{
+  border-right:  10px solid black;
+  width: 20%;
+  text-align: center;
+  background-color: #f2f3f5;
+  height:100%;
+float: left;
+}
+.left1 ul{
+  float: left;
+  width: 98%;
+  padding: 0;
+  margin-top: 2%;
+  margin-right: 5%;
+  list-style: none;
+}
+.left1 h4{
+  text-transform: uppercase;
+   background-color: black;
+   color:teal;
+}
+.left1 ul li{
+  width: 100%;
+
+    text-align: center;
+  font-size:1.5vw;
+  margin-top: 2%;
+  background-color: white;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+.left1 ul li a{
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+
+  text-decoration: none;
+  color:black;
+}
+.left1 ul li a:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.right1{
+  border:2px solid white;
+  width: 70%;
+  margin-top: 3%;
+  margin-right: 3%;
+  /*background:linear-gradient(rgba(120,40,0,.5),rgba(0,40,120,.5));*/
+  height: 80vh;
+background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+float: right;
+}
+h5{
+  position: absolute;
+  bottom:-20%;
+  border: 1px solid white;
+  width: 120px;
+  height: 5vh;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.2vw;
+  right: 10%;
+}
+.right1 .box1{
+  margin-top: 2%;
+  border: 1px solid black;
+position: relative;
+width: 250px;
+height: 500px;
+transition: .5s;
+}
+.right1 .box1:hover{
+  transform: scale(1.1);
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,1);
+}
+.right1 .box1 .thumb{
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.right1 .box1:nth-child(odd) .thumb{
+bottom: 0;
+left: 0;
+}
+.right1 .box1 .thumb img{
+width: 100%;
+height: 100%;
+}
+.right1 .box1 .details{
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.right1 .box1:nth-child(even) .details{
+bottom: 0;
+left: 0;
+}
+.right1 .box1:nth-child(1) .details{
+background-color: #8553cb;
+}
+
+.right1 .box1:nth-child(2) .details{
+background-color: #fe8f01;
+}
+
+.right1 .box1:nth-child(3) .details{
+background-color: #8553cb;
+}
+.right1 .box1:nth-child(4) .details{
+background-color: #fe8f01;
+}
+.right1 .box1:nth-child(5) .details{
+background-color: #79d400;
+}
+.right1 .box1:nth-child(6) .details{
+background-color: #8553cb;
+}
+.right1 .box1 .details .contents{
+position: absolute;
+top: calc(50% + 16px);
+transform: translateY(-50%);
+width: 100%;
+font-family:cursive;
+padding: 20px;
+box-sizing: border-box;
+text-align: center;
+transition: .5s;
+}
+.right1 .box1:hover .details .contents{
+  top: calc(50%);
+}
+.right1 .box1 .details .contents h3{
+margin: 0;
+text-transform: capitalize;
+padding: 10px 0;
+color: #fff;
+}
+.right1 .box1 .details .contents a{
+display: inline-block;
+padding: 5px 20px;
+color: white;
+border: 2px solid white;
+text-decoration: none;
+border-radius: 20px;
+transform: scale(0);
+}
+.right1 .box1:hover .details .contents a{
+  transform: scale(1);
+}
+.right1 .box1 .details .contents a:hover{
+background: white;
+color: teal;
+}
+#near{
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+  padding-top:2%;
+  text-transform: capitalize;
+}
+  </style>
+  <body>
+
+
+<div class="box">
+
+<div class="header1" id="myHeader">
+<h2 style="font-family:source sans pro">CLN</h2>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+if (window.pageYOffset > sticky) {
+header.classList.add("sticky");
+} else {
+header.classList.remove("sticky");
+}
+}
+</script>
+
+
+
+<div class="header">
+  <div class="nav">
+    <div class="nav-header">
+      <div class="nav-title">
+
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a href="menu.html" >home</a>
+      <a href="#" >about</a>
+      <a href="#" >contact us</a>
+      <a href="address.html" >library</a>
+</div>
+    <nav>
+      <ul>
+        <li><a href="#">account</a>
+    <ul>
+         <li><a href="form1.html">log/sign</a></li>
+           <li><a href="#">history</a></li>
+           <li><a href="#">log out</a></li>
+       </ul>
+       <li>
+             </ul>
+           </nav>
+
+  </div>
+  <div class="search">
+          <form class="search-form">
+            <input type="text" placeholder="Search for books, authors, categories and more..">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+</div>
+
+
+<div class="Box">
+  <div class="left1">
+<ul>
+  <h1> Category</h1>
+  <br>
+
+  <li> <a href="lib1.html">lib1</a> </li>
+  <li> <a href="#">lib2</a> </li>
+  <li> <a href="#">lib3</a> </li>
+  <li> <a href="#">lib4</a> </li>
+  <li> <a href="#">lib5</a> </li>
+<li> <a href="#">lib6</a> </li>
+<li> <a href="#">lib7</a> </li>
+<li> <a href="#">lib8</a> </li>
+<li> <a href="#">lib9</a> </li>
+<li> <a href="#">lib10</a> </li>
+</ul>
+  </div>
+  <h1 id="near">learn about libraries.</h1>
+  <div class="right1">
+<div class="box1">
+  <div class="thumb">
+    <img src="pic/images.jpg" alt="">
+      </div>
+    <div class="details">
+      <div class="contents">
+        <h3>library1</h3>
+        <a href="library.html">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="box1">
+    <div class="thumb">
+      <img src="pic/images (1).jpg" alt="">
+        </div>
+      <div class="details">
+        <div class="contents">
+          <h3>library2</h3>
+          <a href="library.html">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="box1">
+      <div class="thumb">
+        <img src="pic/images (3).jpg" alt="">
+          </div>
+        <div class="details">
+          <div class="contents">
+            <h3>library3</h3>
+            <a href="library.html">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="box1">
+        <div class="thumb">
+          <img src="pic/images (2).jpg" alt="">
+            </div>
+          <div class="details">
+            <div class="contents">
+              <h3>library4</h3>
+              <a href="library.html">Read more</a>
+            </div>
+          </div>
+        </div>
+      <!--  <div class="box1">
+          <div class="thumb">
+            <img src="12.jpg" alt="">
+              </div>
+            <div class="details">
+              <div class="contents">
+                <h3>library5</h3>
+                <a href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="box1">
+            <div class="thumb">
+              <img src="12.jpg" alt="">
+                </div>
+              <div class="details">
+                <div class="contents">
+                  <h3>library6</h3>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>-->
+
+</div>
+<!--<a href="#"><h5 style="color:white">more lib...</h5></a>-->
+
+  </div>
+
+  </div>
+
+<div class="footer">
+  <!--<div class="right">
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.00297961309!2d75.89190241504745!3d27.030071783077158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396daffaeb5d6127%3A0x50d11bb970c5d850!2sArya+College+of+Engineering+%26+IT!5e0!3m2!1sen!2sin!4v1540879747970" width="100%" height="250" frameborder="0" style="border:1px solid white" allowfullscreen></iframe></p>
+</div>-->
+<div class="left">
+
+    <div class="col">
+      <h1>Company</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1>Products</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1>Social</h1>
+      <ul>
+        <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+      </ul>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+</div>
+</body>
+</html>

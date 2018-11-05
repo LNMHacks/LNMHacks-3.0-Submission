@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>profile page</title>
+
+
+  <link rel='stylesheet' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.3/angular-material.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700,800,900'>
+<link rel='stylesheet' href='https://codepen.io/JeremyPP/pen/eRarxE.css'>
+<link rel="stylesheet" href="style.css">
+
+      <link rel="stylesheet" href="profile.css">
+
+
+</head>
+<body>
+
+    <div class="header1" id="myHeader">
+  <h2 style="font-family:source sans pro">CLN</h2>
+  </div>
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+  }
+  </script>
+  <div class="header">
+    <div class="nav">
+      <div class="nav-header">
+        <div class="nav-title">
+
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <input type="checkbox" id="nav-check">
+      <div class="nav-links">
+        <a href="menu.html" >home</a>
+        <a href="#" >about</a>
+        <a href="#" >contact us</a>
+        <a href="address.html" >library</a>
+
+      </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">account</a>
+        <ul>
+             <li><a href="form1.html">log/sign</a></li>
+               <li><a href="#">history</a></li>
+               <li><a href="#">log out</a></li>
+           </ul>
+           <li>
+                 </ul>
+               </nav>
+
+      </div>
+      <div class="search">
+              <form class="search-form">
+                <input type="text" placeholder="Search for books, authors, categories and more..">
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+    </div>
+
+  <div id="white" ng-app="wemApp" class="wem-profile" ng-controller="ProfileDetails" data-anonym="false">
+
+	<!-- Page loader -->
+	<div id="loadingSpinner">
+		<svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg>
+	</div>
+
+	<!-- Header toolbar -->
+
+	<!-- Main Container -->
+	<section class="wem-mainContainer with-fixed-toolbar width-90" layout="row">
+
+		<!-- Left section (fixed card) -->
+		<section class="left-container-card">
+
+			<!-- Card -->
+			<div class="card-1 fixed-profile-card">
+
+				<img src="http://bit.ly/2tFWqOx" class="profile-picture">
+				<h1 class="prof-card-fullname truncate">{{user.p1}} {{user.p2}}</h1>
+				<div class="md-subhead prof-card-user truncate">{{user.p3}}<b>&#8226;</b><span>Online</span></div>
+				<div class="card-user-info">Last visit on <span>Apr 7, 2017</span></div>
+				<div class="card-user-info">First visit on <span>May 23, 2016</span></div>
+
+				<!-- Profile card menu -->
+				<md-menu class="prof-card-menu">
+					<md-button aria-label="Open profile menu" class="md-icon-button" ng-click="$mdMenu.open($event)">
+						<i class="material-icons">more_vert</i>
+					</md-button>
+					<md-menu-content>
+						<md-menu-item>
+							<md-button>
+								<div layout="row" flex>
+									<p flex>View profile roles</p>
+								</div>
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button>
+								<div layout="row" flex>
+									<p flex>Merge profile</p>
+								</div>
+							</md-button>
+						</md-menu-item>
+						<md-menu-item>
+							<md-button>
+								<div layout="row" flex>
+									<p flex>Some other option</p>
+								</div>
+							</md-button>
+						</md-menu-item>
+					</md-menu-content>
+				</md-menu>
+			</div>
+
+		</section>
+
+		<div flex="5"></div>
+
+		<!-- Right section -->
+		<section flex class="wem-main-section">
+
+			<!-- Tabs -->
+			<div ng-cloak>
+				<md-content>
+					<md-tabs md-dynamic-height md-border-bottom>
+						<md-tab label="Properties">
+							<md-content class="md-padding">
+
+								<div class="searchMain">
+									<div class="searchicon">
+										<md-icon class="md-wemApp-theme material-icons" role="img" aria-label="search"> search </md-icon>
+									</div>
+									<input type="text" class="width-90" placeholder="Filter properties by name">
+								</div>
+
+								<br>
+
+								<div class="card-1 prof-prop-card">
+									<div class="smallLabelText">Basic info</div>
+									<span class="toggle-group-container">
+										<md-button class="md-icon-button" aria-label="More" ng-click="toggleGroup = !toggleGroup">
+											<i class="material-icons">{{toggleGroupIcon}}</i>
+										</md-button>
+									</span>
+
+									<div ng-show="toggleGroup">
+										<div layout="column" layout-gt-sm="row" class="profile-prop-row">
+											<md-input-container flex="100" flex-gt-sm="50" class="changed-icon md-block">
+												<label>First name</label>
+												<input ng-model="user.p1">
+												<md-button class="md-icon-button" aria-label="">
+													<md-tooltip md-direction="left">Last edited 4 hours ago</md-tooltip>
+													<i class="material-icons">history</i>
+												</md-button>
+											</md-input-container>
+											<div flex-gt-sm="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="100" flex-gt-sm="50" class="changed-icon md-block">
+												<label>Last name</label>
+												<input ng-model="user.p2">
+												<md-button class="md-icon-button" aria-label="">
+													<md-tooltip md-direction="left">Last edited 5 hours ago</md-tooltip>
+													<i class="material-icons">history</i>
+												</md-button>
+											</md-input-container>
+										</div>
+
+										<div layout="column" layout-gt-sm="row" class="profile-prop-row">
+											<md-input-container flex="100" flex-gt-sm="50" class="changed-icon md-block">
+												<label>Username</label>
+												<input ng-model="user.p3">
+												<md-button class="md-icon-button" aria-label="">
+													<md-tooltip md-direction="left">Last edited 2 days ago</md-tooltip>
+													<i class="material-icons">history</i>
+												</md-button>
+											</md-input-container>
+											<div flex-gt-sm="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>Email</label>
+												<input ng-model="user.p4" type="email">
+											</md-input-container>
+										</div>
+
+										<div layout="column" layout-gt-sm="row" class="profile-prop-row">
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>Gender</label>
+												<md-select ng-model="user.state">
+													<md-option value="one">Male</md-option>
+													<md-option value="two">Female</md-option>
+													<md-option value="three">Other</md-option>
+												</md-select>
+											</md-input-container>
+											<div flex-gt-sm="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>Country</label>
+												<input ng-model="user.p6">
+											</md-input-container>
+										</div>
+
+										<md-card-actions layout="row" layout-align="end center" class="prof-card-footer">
+											<md-button>Cancel</md-button>
+											<md-button class="md-accent">Save</md-button>
+										</md-card-actions>
+									</div>
+								</div>
+
+								<br>
+
+								<div class="card-1 prof-prop-card">
+
+									<div class="smallLabelText">Contact</div>
+									<span class="toggle-group-container">
+										<md-button class="md-icon-button" aria-label="More" ng-click="">
+											<i class="material-icons">keyboard_arrow_up</i>
+										</md-button>
+									</span>
+
+									<div ng-show="true">
+										<div layout="column" layout-gt-sm="row" class="profile-prop-row">
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>Phone number</label>
+												<input ng-model="user.p7">
+											</md-input-container>
+											<div flex-gt-sm="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>Address</label>
+												<input ng-model="user.p8">
+											</md-input-container>
+										</div>
+										<div layout="column" layout-gt-sm="row" class="profile-prop-row">
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>City</label>
+												<input ng-model="user.p9">
+											</md-input-container>
+											<div flex-gt-sm="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>Zip code</label>
+												<input ng-model="user.p10">
+											</md-input-container>
+										</div>
+										<div layout="column" layout-gt-sm="row" class="profile-prop-row">
+											<md-input-container flex="100" flex-gt-sm="50" class="md-block">
+												<label>State</label>
+												<input ng-model="user.p11">
+											</md-input-container>
+											<div flex-gt-sm="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<div flex-gt-sm="50" hide-xs hide-sm></div>
+										</div>
+										<md-card-actions layout="row" layout-align="end center" class="prof-card-footer">
+											<md-button>Cancel</md-button>
+											<md-button class="md-accent">Save</md-button>
+										</md-card-actions>
+									</div>
+								</div>
+
+								<br>
+								<div class="card-1 prof-prop-card">
+
+									<div class="smallLabelText">Personal info</div>
+									<span class="toggle-group-container">
+										<md-button class="md-icon-button" aria-label="More" ng-click="">
+											<i class="material-icons">keyboard_arrow_up</i>
+										</md-button>
+									</span>
+
+									<div>
+										<div layout="row" class="profile-prop-row">
+											<md-input-container flex="50" class="changed-icon md-block">
+												<label>Age</label>
+												<input ng-model="user.p12" type="number">
+												<md-button class="md-icon-button" aria-label="">
+													<md-tooltip md-direction="left">Last edited a week ago</md-tooltip>
+													<i class="material-icons">history</i>
+												</md-button>
+											</md-input-container>
+											<div flex="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="50" class="md-block">
+												<label>Birth date</label>
+												<md-datepicker ng-model="user.p13"></md-datepicker>
+											</md-input-container>
+										</div>
+										<div layout="row" class="profile-prop-row">
+											<md-input-container flex="50" class="md-block">
+												<label>Marital status</label>
+												<input ng-model="user.p14">
+											</md-input-container>
+											<div flex="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="50" class="md-block">
+												<label>Kids</label>
+												<input ng-model="user.p15">
+											</md-input-container>
+										</div>
+										<div layout="row" class="profile-prop-row">
+											<md-input-container flex="50" class="md-block">
+												<label>Favorite movie genre</label>
+												<input ng-model="user.p16">
+											</md-input-container>
+											<div flex="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<md-input-container flex="50" class="md-block">
+												<label>Favorite book genre</label>
+												<input ng-model="user.p17">
+											</md-input-container>
+										</div>
+										<div layout="row" class="profile-prop-row">
+											<md-input-container flex="50" class="md-block">
+												<label>Favorite music genre</label>
+												<input ng-model="user.p18">
+											</md-input-container>
+											<div flex="5" hide-xs hide-sm><!-- Spacer //--></div>
+											<div flex="50"></div>
+										</div>
+										<md-card-actions layout="row" layout-align="end center" class="prof-card-footer">
+											<md-button>Cancel</md-button>
+											<md-button class="md-accent">Save</md-button>
+										</md-card-actions>
+									</div>
+								</div>
+
+								<br>
+
+								<div class="card-1 prof-prop-card">
+									<div class="smallLabelText">Work info</div>
+									<span class="toggle-group-container">
+										<md-button class="md-icon-button" aria-label="More" ng-click="">
+											<i class="material-icons">keyboard_arrow_down</i>
+										</md-button>
+									</span>
+
+									<div ng-show="false"></div>
+								</div>
+
+								<br>
+
+								<div class="card-1 prof-prop-card">
+									<div class="smallLabelText">Custom group</div>
+									<span class="toggle-group-container">
+										<md-button class="md-icon-button" aria-label="More" ng-click="">
+											<i class="material-icons">keyboard_arrow_down</i>
+										</md-button>
+									</span>
+
+									<div ng-show="false"></div>
+								</div>
+
+								<br>
+
+							</md-content>
+						</md-tab>
+
+
+						<!--<md-tab label="More">
+							<md-content class="md-padding">
+								<h1>4</h1>
+							</md-content>
+						</md-tab>-->
+					</md-tabs>
+				</md-content>
+			</div>
+
+		</section>
+
+	</section>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.3/angular-material.js'></script>
+
+
+
+    <script  src="profile.js"></script>
+    <div class="footer">
+  <!--<div class="right">
+<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.00297961309!2d75.89190241504745!3d27.030071783077158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396daffaeb5d6127%3A0x50d11bb970c5d850!2sArya+College+of+Engineering+%26+IT!5e0!3m2!1sen!2sin!4v1540879747970" width="100%" height="250" frameborder="0" style="border:1px solid white" allowfullscreen></iframe></p>
+</div>-->
+<div class="left">
+
+    <div class="col">
+      <h1 id="bb">Company</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h1 id="bb">Products</h1>
+      <ul>
+        <li>About</li>
+        <li>Mission</li>
+        <li>Services</li>
+        <li>Social</li>
+        <li>Get in touch</li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1 id="bb">Social</h1>
+      <ul>
+        <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
+        <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>
+      </ul>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+
+</div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+</body>
+
+</html>
