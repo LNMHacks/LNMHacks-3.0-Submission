@@ -1,0 +1,23 @@
+Description of the Project:
+
+Project BlockPoll is a web application of creating a poll of your own and submitting vote by other user. At the end of the poll we will get results of the poll.
+Specified number of candidates will be taking part in the poll as provided by the creator of the poll.
+This app is based using Blockchain Technolony providing decentralised, distributed and secure. No one can manipulate the data and it will also be distributed among all the nodes of the network.
+We have used Ethereum platform and other technology are- Solidity, Javascript[Node.js], expressJs,HTML, CSS.
+
+Contents of project directory:
+
+Ways to host project:
+
+Prerequisite needed:
+1.	Enter the project folder , open the command line and run the command npm install
+	it will install all the dependencies.
+2.	Need Metamask Plugin and account on it to access the project.
+3.	Install metamask and plugin its extension on your browser.
+4.	Create an account on metamask.
+5.	Install Ganache framework.
+6. 	run command through command line: node server.js
+7. or else for complete demo Go to link  https://blockpoll.herokuapp.com
+8. And click on Try this button to proceed further.
+
+

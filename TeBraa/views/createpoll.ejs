@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Block Poll</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif
+    }
+    
+    .w3-bar,
+    h1,
+    button {
+        font-family: "Montserrat", sans-serif
+    }
+    
+    .fa-anchor,
+    .fa-coffee {
+        font-size: 200px
+    }
+    
+    #ethereum {
+        height: 170px;
+        width: 250px;
+    }
+</style>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="/" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+            <a href="/aboutus" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About
+				Us</a>
+            <a href="/instruction" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Instructions</a>
+
+        </div>
+
+
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
+            <a href="/aboutus" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+            <a href="/instruction" class="w3-bar-item w3-button w3-padding-large">Instructions</a>
+        </div>
+    </div>
+
+    <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">BLOCK POLL</h1>
+        <a href="/newpoll" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Create A Poll</a>
+		<a href="/votefor" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Vote</a><br>
+		<a href="/try" class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Try this</a>
+    </header>
+
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Ethereum</h1>
+                <h5 class="w3-padding-32">Ethereum is an open-source, public, blockchain-based distributed computing platform and operating system featuring smart contract functionality. It supports a modified version of Nakamoto consensus via transaction-based state transitions.</h5>
+
+            </div>
+            <div class="w3-third w3-center">
+                <img id="ethereum" src="https://cdn-images-1.medium.com/max/1200/1*u90cJ3k-ZXvLlgWg1apBEg.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-third w3-center">
+                <i class="fa fa-coffee w3-padding-64 w3-text-grey w3-margin-right"></i>
+            </div>
+
+            <div class="w3-twothird">
+                <h1>Block Poll</h1>
+                <p class="w3-text-grey"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+    </div>
+
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+        <div class="w3-xlarge w3-padding-32">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by TeBraa</p>
+    </footer>
+
+<script>
+
+// var contractAbi=contract.at('0xD2a0d3fDA742E73646dC27ed2515EAC9d5A8c6cC);
+window.addEventListener('load', async () => {
+    // Modern dapp browsers...
+    if (window.ethereum) {
+        window.web3 = new Web3(ethereum);
+        try {
+            // Request account access if needed
+            await ethereum.enable();
+            // Acccounts now exposed
+            web3.eth.sendTransaction({/* ... */});
+        } catch (error) {
+            // User denied account access...
+        }
+    }
+    // Legacy dapp browsers...
+    else if (window.web3) {
+        window.web3 = new Web3(web3.currentProvider);
+        // Acccounts always exposed
+        web3.eth.sendTransaction({/* ... */});
+    }
+    // Non-dapp browsers...
+    else {
+        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+    }
+	console.log(window.web3.eth);
+});
+</script>
+</body>
+</html>
