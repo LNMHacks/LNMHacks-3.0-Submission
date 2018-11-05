@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/pprofile"
+    android:backgroundTintMode="screen"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/crop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop"
+                android:layout_below="@+id/state"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soil"
+                android:layout_below="@+id/crop"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/landArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Land Area"
+                android:layout_below="@+id/soil"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/stage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stage"
+                android:layout_below="@+id/landArea"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:layout_below="@+id/stage"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/soilMoisture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soil Moisture"
+                android:layout_below="@+id/day"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:layout_below="@+id/soilMoisture"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:layout_below="@+id/temperature"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+            <TextView android:id="@+id/weather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weather"
+                android:layout_below="@+id/humidity"
+                android:layout_marginTop="10dp"
+                android:textSize="24sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/refresh" />
+
+
+</RelativeLayout>
