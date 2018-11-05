@@ -1,0 +1,12 @@
+{
+  "disabled": true,
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "garbageimages/{name}",
+      "connection": ""
+    }
+  ]
+}
