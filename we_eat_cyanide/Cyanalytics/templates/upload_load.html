@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="">
+    <div class="container">
+        <div class="form card">
+            <h1>Upload CSV</h1>
+            <form action="" enctype="multipart/form-data" method="post" novalidate>
+                {{ form.hidden_tag() }}
+                <p>
+                    {{ form.csv.label }}<br>
+                    {{ form.csv(size=32) }}<tr>
+                        {% for error in form.csv.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                        {% endfor %}
+                </p>
+                <p>
+                    {{ form.filename.label }}<br>
+                    {{ form.filename(size=32) }}<br>
+                    {% for error in form.filename.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                </p>
+                <p>{{ form.submit() }}</p>
+            </form>
+        </div>
+        <div class="load card">
+            <h1>Load Dataset</h1>
+            <h2>Coming Soon..!!</h2>
+            <form action="" method="post" novalidate>
+                {{ form2.hidden_tag() }}
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

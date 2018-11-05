@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center">
+
+<h1>Generated Chart</h1>
+
+<canvas id="myChart" width="400px" height="400px"></canvas>
+<script>
+var ctx = document.getElementById("myChart");
+
+if("{{chart_type}}"=="pie")
+{
+    var color = [];
+
+
+    var dynamicColors = function() {
+                var r = Math.floor(Math.random() * 255);
+                var g = Math.floor(Math.random() * 255);
+                var b = Math.floor(Math.random() * 255);
+                return "rgb(" + r + "," + g + "," + b + ")";
+             };
+
+             for (var i in {{data_x}}) {
+                color.push(dynamicColors());
+             }
+
+
+    var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: [{%for item in labels_x %} "{{item}}",{%endfor%}],
+            datasets: [{
+                data: {{data_x}},
+                backgroundColor:color
+            }]
+        },
+        options: {
+            responsive: false
+        }
+    })
+}
+
+
+
+
+</script>
+</div>
+
+{% endblock %}

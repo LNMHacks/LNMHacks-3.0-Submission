@@ -1,0 +1,75 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }}</title>
+        {% else %}
+        <title>LNMHacks 3.0</title>
+        {% endif %}
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/base.css') }}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="navbar heading">{{heading}}</div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                {% if logged_in %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/index">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/dataset/dashboard">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/select/query">Query</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/charts">Visualise</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="/index">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                {% endif %}
+            </ul>
+          </div>
+        </nav>
+        <br>
+        <div class="row">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <ul class="mx-auto d-flex text-center flashMessages">
+                {% for message in messages %}
+                <li class="alert alert-info">{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+            <!-- {% if logged_in %}
+            <a href="/index">Logout</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/dataset/dashboard">Info</a>
+            <a href="/select/query">Query</a>
+            <a href="/showchart">Visualise</a>
+            {% else %}
+            <a href="/index">Home</a>
+            <a href="/login">Login</a>
+            {% endif %} -->
+            <br>
+        </div>
+            {% block content %}{% endblock %}
+    </body>
+</html>
