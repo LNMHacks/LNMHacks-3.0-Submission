@@ -1,0 +1,76 @@
+
+								TEAM - TECHMAGNIFIERS
+								  PROJECT - EduRes
+
+
+TEAM MEMBERS-
+
+1. Rishabh Aren 
+2. Ashish Gupta 
+3. Mohit Jindal
+
+APPLICATION DESCRIPTION:
+
+“EduRes” is an android application which provide students with all sort of resources which will be helpful for their academic growth. This application provides question papers from previous years, class notes and study material provided by faculties. Any registered student can upload class notes, papers or any study material which may be helpful for other students thus, edures provides a common platform for all students to share their study resources. It also allows students to put up queries regarding any resource available on the application, which will initiate a thread for particular query and liable users who may solve queries will be notified accordingly.
+
+
+PURPOSE:
+
+    • Course instructors try hard to provide students with all sort of resources and books to help them to strengthen their fundamental through different platforms like – piazza, google classrooms ,google group which makes it difficult for the students to find suitable resource. This app will provide a common platform for all type of resources.
+
+    • Having lot of study material to study from makes it very confusing, this app will aim to solve this problem by properly classifying all materials under different courses.
+
+    • Students waste lot of their precious time to find relevant notes to study from rather than utilising it for studies. This app allows student to have access to all the class notes in just few clicks.
+
+
+
+PRODUCT FEATURES:
+    
+    • Edures is made exclusively for LNMIIT students.
+    • Allows students to download and upload different documents related to the curriculum.
+    • Only allow students to login after successful email verification.
+    • Creates common forum to send queries to classmates or to admin or to all available users .
+    • Edures allows students to make comments on queries available to them.
+
+
+
+TECHNOLOGIES USED:
+
+    1. Database: Firebase Database
+    2. Language: Java, XML
+    3. Tools: Android Studio, Firebase Console
+
+
+
+APP PERMISSIONS
+     1. Read/Write External File Storage
+     2. Internet Activity
+     3. Network State 
+
+
+
+DEPENDENCIES
+    
+1   implementation 'com.google.firebase:firebase-messaging:17.3.4'
+2.  compile "com.android.support:design:24.2.0"
+3.  implementation 'com.google.android.gms:play-services-appinvite:16.0.4'
+4.  implementation 'com.google.firebase:firebase-core:16.0.4'
+5.  implementation 'com.google.firebase:firebase-firestore:17.1.1'
+6.  implementation 'com.google.firebase:firebase-auth:16.0.4'
+7.  implementation 'com.google.firebase:firebase-database:16.0.3'
+8.  implementation 'com.google.firebase:firebase-storage:16.0.3'
+
+
+
+STEPS TO RUN PROJECT IN ANDROID STUDIO
+
+1.  Go to File -> New -> Project from Version Control -> Git
+2.  Select the TechMagnifier.Edures.git
+3.  Authenticate with username and password
+4.  Click Clone.
+
+
+    
+
+
+
