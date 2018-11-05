@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.enggmartservices.enggmart.activities.ProfileActivity">
+
+    <include layout="@layout/custom_app_bar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userdpprofile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:background="@mipmap/usera" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_pro_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#c4c4c4"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="1dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:padding="6dp"
+                android:src="@drawable/name" />
+
+            <TextView
+                android:id="@+id/nameprofiletv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="1dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:paddingHorizontal="10dp"
+                android:text="User Name"
+                android:textColor="#1d1b8e"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/nameprofileet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:text="example"
+                android:textColor="#bfdcbd"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#c4c4c4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="1dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:padding="6dp"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/emailprofiletv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:singleLine="true"
+                android:text="username@example.xyz"
+                android:textColor="#2e2e2e"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/emailprofileet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:text="example@gmail.com"
+                android:textColor="#bfdcbd"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#c4c4c4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="1dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:padding="6dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/phoneprofiletv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="1234567890"
+                android:textColor="#2e2e2e"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <EditText
+                android:id="@+id/phoneprofileet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:text="1234567890"
+                android:textColor="#bfdcbd"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#c4c4c4"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingBottom="1dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="1dp"
+                android:background="#fff"
+                android:padding="6dp"
+                android:src="@drawable/detail" />
+
+            <TextView
+                android:id="@+id/detailedprofile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:background="#fff"
+
+                android:gravity="center_vertical"
+                android:paddingHorizontal="10dp"
+                android:text="Detailed Profile"
+                android:textColor="#2e2e2e"
+                android:textSize="18sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/updatepro"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttoncorner"
+        android:fontFamily="BOLD"
+        android:gravity="center"
+        android:text="Update"
+        android:textSize="20dp" />
+</LinearLayout>

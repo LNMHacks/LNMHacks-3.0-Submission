@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="100dp"
+    android:gravity="right">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/msgsend"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/sender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You :"
+                android:textColor="#ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#4e4e4e" />
+
+            <TextView
+                android:id="@+id/msgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="messagehhefgsgggsdfhgkhsdlkjglushdfghsdhgsdhg;dshg;oihs;oiegh;oisdg;oisg;oieshhdfjsdgfhsghgshgfdhjghsdgfhsjhgjjdhgjsgjhgfjhgsjhgjshgjhgsjfhsgbsjhfgbjhfbgsbgfbjhbfghsbgjhsjhsdfgnbgnbmnbgfdbgjhfghgbdhfgbhjghfghsghgfhsgjhghfghfgbmngbfffjbhjbjhgvhjgvsjhgvjhgvdfjsvhvsjhvdjvfhdhdgvvshhvsssssshvdjgvrdfhgvjhrvgjsvftsvjgvdfvgbfvgbnvggvgsvjhjfajfgsahjfghgakjsghbfhgbhjd"
+                android:textColor="#000" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

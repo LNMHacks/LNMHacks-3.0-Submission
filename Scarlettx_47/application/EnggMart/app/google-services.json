@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "829284059452",
+    "firebase_url": "https://enggmart-efea2.firebaseio.com",
+    "project_id": "enggmart-efea2",
+    "storage_bucket": "enggmart-efea2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:829284059452:android:c2c0132cf67cf857",
+        "android_client_info": {
+          "package_name": "com.enggmartservices.enggmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "829284059452-pdmvagskpa6gq2i2scnudm2lcpqh56b0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.enggmartservices.enggmart",
+            "certificate_hash": "ab1e6fb42d173cda8b9c2ddf2ceb474686cda3a1"
+          }
+        },
+        {
+          "client_id": "829284059452-9h9749pk0ot8ji3vi5s3r99ipnuhsnlq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0jbFSEA4bea9skFQYCIXinoVsdaq8KsY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "829284059452-9h9749pk0ot8ji3vi5s3r99ipnuhsnlq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

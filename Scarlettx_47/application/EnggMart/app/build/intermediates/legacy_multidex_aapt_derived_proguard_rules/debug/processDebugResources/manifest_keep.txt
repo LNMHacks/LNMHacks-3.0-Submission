@@ -1,0 +1,2 @@
+# Referenced at D:\EnggMart\app\build\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:20
+-keep class com.enggmartservices.enggmart.utility.MyApplication { <init>(...); }
