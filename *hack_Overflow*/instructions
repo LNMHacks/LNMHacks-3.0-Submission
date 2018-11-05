@@ -1,0 +1,8 @@
+First install the apk file given in the folder by the name "Speculo.apk" and install it in your android Phone(Requirement: android 5.0 - android 8.1) and then open the app in your phone.
+After opening the app on your phone you will get two options :
+1. To Extract Text from the image : when you click this option you will have to accept the camera permissions for the app to work further. After you accept the permissions, you will have to click an image by tapping on the button present on the bottom right side. After clicking that button the app will process that image and will show you the text(if found) in the text dialog present on the bottom half of the screen.
+
+2. To scan an QR code: when you click this option you will have to accept the camera permissions for the app to work further(It will appear if accepted  in first option). Align the QR code with square box shown on the screen to scan the QR code and the result will be displayed after scanning on the screen.
+
+*Please use the phone only in Protriat mode to scan the images.
+*For best results make sure that the text is clearly visible in the image you click.
