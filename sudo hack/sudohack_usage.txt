@@ -1,0 +1,52 @@
+﻿TEAM - SUDO HACK
+
+
+TITLE - DEEP LEARNING IN MEDICAL DETECTION       (PNEUMONIA DETECTION )
+
+
+TEAM MEMBERS - 
+1. BHARAT SINGH
+2. GULSHAN KUMAR SHARMA
+3. BANWARI LAL JITARWAL
+
+
+
+
+
+
+TO RUN PNEUMONIA_DETECTION model
+
+
+1. On GPU                             
+ 	Requirement for loading model :
+               1. CUDA capable GPU
+               2. CUDA  10.0 Tool kit (  ubuntu 18.04)
+               3. cudnn7  library (need account on nvidia developer )
+               4. Anaconda3 
+               5. Tensorflow-gpu
+               6. Pydicom(For reading DICOM files)
+               7. sklearn(for labeling )
+               8. matplotlib
+     
+2. On CPU
+	Requirement for loading model:
+               1. Anaconda3
+               2. Tensorflow=1.11.0
+               3. Pydicom
+               4. sklearn
+               5. matplotlib
+    
+
+
+  USAGE -
+
+     -    download test dataset from link given in readme file after cloning and changing directory to clone dir
+     -    you need to run check.py  given in submission folder  using python 3.6 version and it runs with administrator permission
+     -    Testing to new dataset, need to change path  to  path of new dataset
+     -    submission.csv file will be generated as prediction result of model.
+
+
+
+
+        ** If you are loading model on cpu it takes little bit more time(approx. 40 min/  1000  images)**
+      * if any problem/error is still there assist from team members *
