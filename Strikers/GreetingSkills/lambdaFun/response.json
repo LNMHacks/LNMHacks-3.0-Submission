@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "sessionAttributes": {
+  },
+  "response": {
+    "outputSpeech": {
+      "type": "PlainText",
+      "text": "Welcome to Greetings skill."
+    },
+    "card": {
+      "type": "Simple",
+      "title": "Greetings",
+      "content": "Welcome to Greetings skill."
+    },
+    "reprompt": {
+      "outputSpeech": {
+        "type": "PlainText",
+        "text": "Whom you want to greet?"
+      }
+    },
+    "shouldEndSession": false
+  }
+}

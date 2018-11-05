@@ -1,0 +1,25 @@
+{
+  "session": {
+    "sessionId": "SessionId.9a334490-4238-42e6-a4e9-28a6470a78e7",
+    "application": {
+      "applicationId": "amzn1.ask.skill.8015dfcb-2b86-4c0f-abdf-b6f018c17f2b"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AGSM43SI352SULJJB2J2YEABTYN6NXEX636RW7I4OLU7OR3CMD57GYZJOIU7WNNK7Z3GBKGM4IBYZSYQBMEMWMVTBBQXEATWKRKWS7QO5VHFUYLERQJ4YS26MU2AGEJ7DYHMOC74EQV2NGKFQZZOILYES5BGQJBLEP6B7EJ6RKTIQGU4OEEG3A43O54UISDXYDCFGQKSS5B35JY",
+      "accessToken": "ya29.Glz_AzFrUkjWZ35rmRj6EIV0aT5foWddkn9JbAUQTrX3cOBfkx_ZqAYNzsv5-n7gCx6TiEWuScocIH-5dVFglksGAttMJOyYU3mOdvELWsyXp3LTTjQA3xwjcO44Pg"
+    },
+    "new": true
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.20fbf33c-05ec-49d8-a67f-1f30fa9a1c2f",
+    "locale": "en-US",
+    "timestamp": "2017-02-07T09:40:55Z",
+    "intent": {
+      "name": "EmailCheckIntent",
+      "slots": {}
+    }
+  },
+  "version": "1.0"
+}

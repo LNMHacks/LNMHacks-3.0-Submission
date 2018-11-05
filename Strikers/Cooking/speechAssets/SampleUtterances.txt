@@ -1,0 +1,29 @@
+GetNutritionInfo how many calories are in {FoodItem}
+GetNutritionInfo {FoodItem}
+GetNutritionInfo {FoodItem} calories
+GetNutritionInfo {FoodItem} nutrition information
+GetNutritionInfo get calorie information of {FoodItem}
+GetNutritionInfo get nutrition information of {FoodItem}
+GetNutritionInfo get me calorie information of {FoodItem}
+GetNutritionInfo give me calorie information of {FoodItem}
+GetNutritionInfo tell me calorie information of {FoodItem}
+
+GetNextEventIntent more information
+GetNextEventIntent more
+
+
+
+GetQuizIntent start a quiz
+GetQuizIntent start new quiz
+GetQuizIntent give me a quiz
+
+QuizAnswerIntent {Answer}
+
+DontKnowIntent i don't know
+DontKnowIntent don't know
+DontKnowIntent skip
+DontKnowIntent i don't know that
+DontKnowIntent who knows
+DontKnowIntent i don't know this question
+DontKnowIntent i don't know that one
+DontKnowIntent dunno

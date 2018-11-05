@@ -1,0 +1,28 @@
+{
+  "session": {
+    "new": false,
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": "usrid123"
+    },
+    "application": {
+      "applicationId": "amzn1.echo-sdk-ams.app.1234"
+    }
+  },
+  "version": "1.0",
+  "request": {
+    "intent": {
+      "slots": {
+        "FoodItem": {
+          "name": "FoodItem",
+          "value": "butter salted"
+        }
+      },
+      "name": "GetNutritionInfo"
+    },
+    "type": "IntentRequest",
+    "requestId": "request5678"
+  }
+}
+

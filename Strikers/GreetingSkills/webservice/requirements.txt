@@ -1,0 +1,3 @@
+Flask==0.12
+Flask-Ask==0.8.7
+requests==2.12.1
