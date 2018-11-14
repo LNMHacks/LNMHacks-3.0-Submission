@@ -1,0 +1,54 @@
+Project Title: Sign Language Recognition Project
+
+Information:
+Sign Language Recognition (through hand gestures) for deaf and dumb people .We would capture live data (video) through our system's webcam, segregate the hand gestures and use tensorflow-keras to recognize it form our build in data library; then that gesture would be processed and converted to text which would be shown and voice output will also be given.
+We have saved the data of different gestures includeing numbers(0-9) ,alphabets (A-Z) and many other gestures .
+
+# Application areas:
+1) It would enable the people with hearing disability to communicate with other people.
+Deaf people would make signature gestures that would be converted to text and speech, thus enabling people to interact and communicate with them.
+2) Useful for news channels for people with hearing and speaking disability
+
+# Requirements:
+1. Python 3.x
+2. OpenCV 3.4
+3. h5py
+4. pyttsx3
+5. A good CPU (preferably with a GPU).
+
+## Installing the requirements
+pip install -r requirements_gpu.txt      	//if GPU is there
+pip install -r requirements_cpu.txt      	//if GPU is not there
+
+## What we did here
+1. Set hand histogram. The window appeared would have 50 squares(5*10). Put your hands in that square and press 'c'. One other window thresh would appear.Only white patches corresponding to the parts of the image which has your skin color should appear on the "thresh" window.
+command: python3 set_hand_hist.py
+
+2.now you need to create your own gestures using this command .you can create basic gestures like alphabets and numbers. we are providing a few of them.
+Created gesture samples using opencv. For each gesture, 1200 images are captured each of 50*50 pixels.
+command: python3 create_gesture.py
+
+After creating gestures, each of these images is flipped to ensure gesture recognition from both right and left hand.
+command: python3 flip_images.py
+
+3. After adding all gestures, run the file for loading images in db.
+command: python3 load_images.py
+
+4. To see all stored gestures,
+command: python3 display_all_gestures.py
+
+5. Training of the model can be done by Keras.
+command: python3 cnn_keras.py
+
+6 Get model reports by running this file.
+command: python3 get_model_reports.py
+
+7.Test gestures by setting hand histogram.
+command: python3 set_hand_hist.py
+
+8. For recognition start recognize_gesture.py
+command: python3 recognize_gesture.py
+
+9. Start the file: python3 fun_util.py
+In text mode you can create your own words using finger spellings or use the predefined gestures.
+The text on screen will be converted to speech on removing your hand from the green box.
