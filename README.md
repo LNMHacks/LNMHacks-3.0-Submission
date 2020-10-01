@@ -18,7 +18,7 @@
 
 ### Explaination:
 
-The traditional implementation uses the texture of surrounding areas and fill the area but it does not usually produce good results, so we used a combination of **Object Detection and surrounding textures** to get the desired output.
+The traditional implementation uses the texture of surrounding areas and fills the area but it does not usually produce good results, so we used a combination of **Object Detection and surrounding textures** to get the desired output.
 
 The model was trained on Places2 Dataset: (http://places2.csail.mit.edu/) so it works best on **Outdoor Natural Images** and can be extended to other datasets as well very easily.
 
