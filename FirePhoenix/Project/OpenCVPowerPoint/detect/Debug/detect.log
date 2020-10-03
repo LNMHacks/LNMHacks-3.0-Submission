@@ -1,0 +1,16 @@
+﻿Build started 03-11-2018 07:09:31 PM.
+     1>Project "C:\Users\HP\documents\visual studio 2013\Projects\detect\detect\detect.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (detect.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Face Detection\opencv\build\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt opencv.cpp
+         opencv.cpp
+     1>c:\users\hp\documents\visual studio 2013\projects\detect\detect\opencv.cpp(63): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\hp\documents\visual studio 2013\projects\detect\detect\opencv.cpp(64): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\HP\documents\visual studio 2013\Projects\detect\Debug\opencvcolordetection.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Face Detection\opencv\build\x86\vc12\lib" opencv_calib3d2413d.lib opencv_contrib2413d.lib opencv_core2413d.lib opencv_features2d2413d.lib opencv_flann2413d.lib opencv_gpu2413d.lib opencv_highgui2413d.lib opencv_imgproc2413d.lib opencv_legacy2413d.lib opencv_ml2413d.lib opencv_nonfree2413d.lib opencv_objdetect2413d.lib opencv_photo2413d.lib opencv_stitching2413d.lib opencv_ts2413d.lib opencv_video2413d.lib opencv_videostab2413d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\HP\documents\visual studio 2013\Projects\detect\Debug\opencvcolordetection.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\HP\documents\visual studio 2013\Projects\detect\Debug\opencvcolordetection.lib" /MACHINE:X86 Debug\opencv.obj
+         detect.vcxproj -> C:\Users\HP\documents\visual studio 2013\Projects\detect\Debug\opencvcolordetection.exe
+     1>Done Building Project "C:\Users\HP\documents\visual studio 2013\Projects\detect\detect\detect.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:21.74
