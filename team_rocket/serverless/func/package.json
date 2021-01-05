@@ -9,7 +9,7 @@
   "author": "Ayush Chauhan",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "dotenv": "^5.0.1",
     "mqtt": "^2.16.0",
     "mqttjs": "0.0.0",
