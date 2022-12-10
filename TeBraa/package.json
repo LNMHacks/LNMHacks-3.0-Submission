@@ -15,7 +15,7 @@
     "dependencies": {
         "body-parser": "^1.18.3",
         "ejs": "^2.6.1",
-        "express": "^4.16.4",
+        "express": "^4.17.3",
         "solc": "^0.4.25",
         "truffle-hdwallet-provider": "0.0.6",
         "web3": "^1.0.0-beta.36"
