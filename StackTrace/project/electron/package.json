@@ -45,7 +45,7 @@
     "firebase": "^5.5.7"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.10.0",
+    "@angular-devkit/build-angular": "~15.0.4",
     "@angular/cli": "7.0.2",
     "@angular/common": "7.0.0",
     "@angular/compiler": "7.0.0",
